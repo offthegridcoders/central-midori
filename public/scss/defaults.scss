@@ -2,3 +2,8 @@ html,
 body {
   font-family: 'Open Sans', sans-serif;
 }
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
