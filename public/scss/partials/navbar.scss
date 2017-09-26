@@ -1,0 +1,57 @@
+.main-nav-bar {
+  background-color: #fff;
+  padding: 10px 40px;
+
+  .logo {
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 60px;
+  }
+
+  .main-list {
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+
+    li {
+      display: inline-block;
+      margin: 0 40px 0 0;
+    }
+
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 14px;
+      color: $brandGray;
+
+      &:hover {
+        color: $primaryColor;
+      }
+    }
+  }
+
+  .phone {
+    float: right;
+    position: relative;
+    top: 13px;
+
+    a,
+    .fa-phone {
+      display: inline-block;
+      vertical-align: middle;
+      color: $primaryColor;
+    }
+
+    .fa-phone {
+      margin-right: 5px;
+    }
+
+    a {
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 18px;
+      text-decoration: none;
+    }
+  }
+}

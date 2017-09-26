@@ -1,0 +1,10 @@
+// DEFAULTS AND HELPERS
+@import './normalize';
+@import './defaults';
+@import './palette';
+
+// PARTIALS
+@import './partials/navbar';
+
+// PAGES
+@import './pages/homepage';
