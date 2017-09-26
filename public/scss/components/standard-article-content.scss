@@ -1,0 +1,43 @@
+.standard-article-content {
+  padding: 60px 0;
+
+  h3,
+  h4 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  h4 {
+    font-size: 50px;
+    color: $primaryColor;
+    margin: 40px 20px;
+  }
+
+  p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 38px;
+    max-width: 800px;
+    margin: 0 auto;
+
+    a {
+      color: $primaryColor;
+      text-decoration: none;
+    }
+  }
+
+  img.center {
+    width: 700px;
+    margin: 40px auto;
+  }
+
+  &.gray {
+    background-color: $lightGray;
+  }
+}

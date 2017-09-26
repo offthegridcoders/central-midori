@@ -1,33 +1,27 @@
 .homepage-section {
-
-  .main-header {
+  .main-header-image {
     background-image: url('../assets/homepage-header.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     padding: 400px 100px 100px;
     position: relative;
+  }
 
-    .content {
-      bottom: 0;
-      left: 0;
-      right: 0;
-      position: absolute;
+  article {
+    header {
+      padding: 80px 20px;
+      text-align: center;
 
       h1 {
-        color: #fff;
-        display: block;
-        text-align: center;
-        width: 100%;
-        font-weight: 600;
-        padding: 20px;
-        font-size: 70px;
-        background-color: rgba(0, 0, 0, 0.1);
+        font-size: 40px;
+        margin: 0 0 40px;
       }
 
-      em {
-        font-style: normal;
-        font-weight: 900;
+      p {
+        font-size: 24px;
+        line-height: 38px;
+        padding: 0 100px;
       }
     }
   }

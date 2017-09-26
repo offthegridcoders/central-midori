@@ -1,12 +1,19 @@
-// DEFAULTS AND HELPERS
+// VENDOR
 @import './normalize';
+
+// DEFAULTS AND HELPERS
+@import './palette';
 @import './defaults';
 @import './animate';
-@import './palette';
+@import './buttons';
 
 // PARTIALS
 @import './partials/navbar';
 @import './partials/footer';
+
+// COMPONENTS
+@import './components/standard-article-content';
+@import './components/tiled-list';
 
 // PAGES
 @import './pages/homepage';
