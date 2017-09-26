@@ -1,0 +1,13 @@
+.light-guides-section {
+  display: block;
+  min-height: calc(100vh - 260px);
+
+  .main-header-image {
+    background-image: url('../assets/list-items/item2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 400px 100px 100px;
+    position: relative;
+  }
+}

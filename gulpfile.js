@@ -7,12 +7,12 @@ var clean = require('gulp-clean');
 
 const htmlPartial = require('gulp-html-partial');
 
-let dist = {
+var dist = {
   css: './dist/css',
 };
 
 gulp.task('html', function () {
-  gulp.src(['templates/*.html'])
+  gulp.src(['templates/**/*.html'])
     .pipe(htmlPartial({
       basePath: 'partials/'
     }))
@@ -33,7 +33,12 @@ gulp.task('copy-images', function () {
     .pipe(gulp.dest('./dist/assets/'));
 });
 
-gulp.task('default', ['sass', 'html', 'copy-images'], function() {
+gulp.task('copy-vendor', function () {
+  gulp.src('./vendor/**/**.*')
+    .pipe(gulp.dest('./dist/vendor/'));
+});
+
+gulp.task('default', ['sass', 'html', 'copy-images', 'copy-vendor'], function() {
   browserSync.init({
     server: "./dist"
   });

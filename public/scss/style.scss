@@ -13,7 +13,12 @@
 
 // COMPONENTS
 @import './components/standard-article-content';
+@import './components/standard-article-text';
 @import './components/tiled-list';
+@import './components/statistics-article-content';
+@import './components/standard-slider-component';
 
 // PAGES
 @import './pages/homepage';
+@import './pages/flexible-printed-electronics-section';
+@import './pages/light-guides-section';

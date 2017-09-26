@@ -1,4 +1,6 @@
 .homepage-section {
+  min-height: calc(100vh - 260px);
+
   .main-header-image {
     background-image: url('../assets/homepage-header.jpg');
     background-repeat: no-repeat;

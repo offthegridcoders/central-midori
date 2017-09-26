@@ -1,0 +1,26 @@
+.statistics-article-content {
+  text-align: center;
+  padding: 40px;
+
+  h4 {
+    font-size: 30px;
+  }
+
+  ul {
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+
+    li {
+      margin-bottom: 15px;
+      line-height: 30px;
+    }
+
+    span {
+      font-weight: 600;
+    }
+  }
+  &.gray {
+    background-color: $lightGray;
+  }
+}
