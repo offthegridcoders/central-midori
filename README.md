@@ -13,4 +13,4 @@ npm run dev
 ```
 
 ## Build
-Build files will be located in `/dist`
+Build files will be located in `/docs`
