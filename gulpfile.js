@@ -8,7 +8,7 @@ var clean = require('gulp-clean');
 const htmlPartial = require('gulp-html-partial');
 
 var dist = {
-  css: './dist/css',
+  css: './docs/css',
 };
 
 gulp.task('html', function () {
@@ -16,9 +16,9 @@ gulp.task('html', function () {
     .pipe(htmlPartial({
       basePath: 'partials/'
     }))
-    .pipe(gulp.dest('./dist/'));
+    .pipe(gulp.dest('./docs/'));
 
-  return gulp.src('./dist/partials/', {read: false})
+  return gulp.src('./docs/partials/', {read: false})
     .pipe(clean());
 });
 
@@ -30,17 +30,17 @@ gulp.task('sass', function () {
 
 gulp.task('copy-images', function () {
   gulp.src('./public/assets/**/**.*')
-    .pipe(gulp.dest('./dist/assets/'));
+    .pipe(gulp.dest('./docs/assets/'));
 });
 
 gulp.task('copy-vendor', function () {
   gulp.src('./vendor/**/**.*')
-    .pipe(gulp.dest('./dist/vendor/'));
+    .pipe(gulp.dest('./docs/vendor/'));
 });
 
 gulp.task('default', ['sass', 'html', 'copy-images', 'copy-vendor'], function() {
   browserSync.init({
-    server: "./dist"
+    server: "./docs"
   });
   gulp.watch('./public/assets/**/**.*', ['copy-images']).on('change', browserSync.reload);
   gulp.watch('./public/scss/**/*.scss', ['sass']).on('change', browserSync.reload);
