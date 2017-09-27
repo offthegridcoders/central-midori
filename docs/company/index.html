@@ -19,6 +19,9 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.js"></script>
         <script src="/js/scripts.js"></script>
     </head>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.css'
+    rel='stylesheet' />
     
     <body>
         <nav class="main-nav-bar"> <a href="/">
@@ -46,133 +49,67 @@
         </nav>
         <script>
             $(document).ready(function() {
-                $('#' + 'Homepage' + 'Link').addClass("active");
+                $('#' + 'company' + 'Link').addClass("active");
               });
         </script>
-        <section class="homepage-section">
+        <section class="company-section">
             <div class="main-header-image"></div>
             <article>
-                <header class="animated fadeIn">
-                     <h1>CMI Brings <em>Innnovation</em> to <em>Manufacturing</em></h1>
-
-                    <p>Central Midori International (CMI) is a technology manugacturer bringing
-                        design and engineering expertise to make products better. With German oversight
-                        and Asian efficiency, CMI is skilled, flexible, and agile.</p>
-                </header>
                 <div class="standard-article-content gray">
-                     <h3>&#8212; Get started &#8212;</h3>
+                     <h3>&#8212; company &#8212;</h3>
 
-                     <h4 class="animated fadeIn">Design</h4>
-
-                    <p>This is fake text. With over 25 years of experience, Central Midori is
-                        recognized in Asia as an expert in design, engineering and manufacturing.
-                        This is fake text. With over 25 years of experience, Central Midori is
-                        recognized.</p>
-                    <ul class="tiled-list-component">
-                        <li> <a href="#">
-      <img src="assets/list-items/item8.png"/>
-      <h5>Discuss some stuff with you</h5>
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
-    </a>
-
-                        </li>
-                        <li> <a href="#">
-      <img src="assets/list-items/item7.png"/>
-      <h5>Do some more stuff with you</h5>
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
-    </a>
-
-                        </li>
-                        <li> <a href="#">
-      <img src="assets/list-items/item9.png"/>
-      <h5>Finalize the final stuff and smile</h5>
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
-    </a>
-
-                        </li>
-                    </ul>
-                    <div class="button-wrapper-center">
-                        <button class="branded-btn">Talk to our design experts</button>
-                    </div>
-                </div>
-                <div class="standard-article-content">
-                     <h3>&#8212; Solutions &#8212;</h3>
-
-                     <h4>Manufacturing</h4>
+                     <h4>central midori international</h4>
 
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
                         nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
                         wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
                         lobortis nisl ut aliquip ex ea commodo consequat.</p>
-                    <ul class="tiled-list-component white">
+                    <p>
+                        <img src="assets/history.jpg" class="center" />
+                    </p>
+                </div>
+                <div class="standard-article-content market-component">
+                     <h3>Markets</h3>
+
+                    <ul class="tiled-list-component market-list white">
                         <li> <a href="product/flexible-printed-electronics">
-      <img src="assets/list-items/item1.png"/>
-      <h5>Flexible Printed Electronics</h5>
-      <p>A technology with the potential to revolutionize electronics as we know it</p>
+      <img src="assets/industrial.jpg"/>
+      <h5>Industial</h5>
+      <p>Central-Midori has served the Industrial market with membrane switch Human-Machine-Interface since its creation in 1988.</p>
     </a>
 
                         </li>
                         <li> <a href="product/flexible-printed-electronics">
-      <img src="assets/list-items/item2.png"/>
-      <h5>Light Guides</h5>
-      <p>Designed to provide a uniform illumination with a minimum number of LEDs</p>
+      <img src="assets/instrumentation.jpg"/>
+      <h5>Instrumentation</h5>
+      <p>In the last ten years green regulations and initiatives have fueled a rapid growth in environmental and analytical instrumentation.</p>
     </a>
 
                         </li>
                         <li> <a href="product/flexible-printed-electronics">
-      <img src="assets/list-items/item3.png"/>
-      <h5>Membrane Switch</h5>
-      <p>Expert in design, engineering and manufacturing of customize membrane switches.</p>
+      <img src="assets/medical.jpg"/>
+      <h5>Medical</h5>
+      <p>Over the years medical has proven to be a very successful market for Central Midori technologies.</p>
     </a>
 
                         </li>
                         <li> <a href="product/flexible-printed-electronics">
-      <img src="assets/list-items/item4.png"/>
-      <h5>Graphic Overlays</h5>
-      <p>Color matching capabilities consistently guarantee your brand recognition.</p>
-    </a>
-
-                        </li>
-                        <li> <a href="product/flexible-printed-electronics">
-      <img src="assets/list-items/item5.png"/>
-      <h5>Security Foil</h5>
-      <p>3D multi-directional protextion against physical intrusion.</p>
-    </a>
-
-                        </li>
-                        <li> <a href="product/flexible-printed-electronics">
-      <img src="assets/list-items/item6.png"/>
-      <h5>Force Sensors</h5>
-      <p>Pressure sensitive ink formulation is customized to meet the application requirements</p>
+      <img src="assets/banking-payment.jpg"/>
+      <h5>Banking/Payment</h5>
+      <p>Under PCI 3.0 -- the new Payment Card Industry (PCI) standards for network security</p>
     </a>
 
                         </li>
                     </ul>
                     <div class="button-wrapper-center"> <a href="/product/flexible-printed-electronics">
-              <button class="branded-btn">
-                Build your product
-              </button>
-            </a>
+          <button class="branded-btn">
+            Learn More
+          </button>
+        </a>
 
                     </div>
                 </div>
-                <div class="standard-article-content gray">
-                     <h3>&#8212; featured &#8212;</h3>
-
-                     <h4>Our Development Center</h4>
-
-                    <p>At the heart of CMI's innovation paradigm is the state-of-the-art development
-                        centre where we can design, rapidly prototype, test, and iterate products.
-                        <a
-                        href="#">Learn More</a>
-                    </p>
-                    <p>
-                        <img src="assets/dev-centre.jpg" class="center" />
-                    </p>
-                    <div class="button-wrapper-center">
-                        <button class="branded-btn">Take a closer look</button>
-                    </div>
-                </div>
+                <div id='map' class="map-box-component"></div>
                 <div class="standard-article-content light-green">
                      <h3>&#8212; contact us &#8212;</h3>
 
@@ -234,3 +171,52 @@
     </body>
 
 </html>
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoidGhld2lja2Vkd2ViZGV2IiwiYSI6ImNqODJkYzBwajJrcnkzMnMwZ2hnb2NmcGEifQ.44JG6hnm7JiMDBxZ6L35Jw';
+    
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/light-v9',
+        center: [43.6793, 33.2232],
+        zoom: 1
+      });
+    
+      var geojson = {
+        type: 'FeatureCollection',
+        features: [{
+          type: 'Feature',
+          geometry: {
+            type: 'Point',
+            coordinates: [103.790222, 1.296437]
+          },
+          properties: {
+            title: 'CMI',
+            description: 'singapore'
+          }
+        },
+          {
+            type: 'Feature',
+            geometry: {
+              type: 'Point',
+              coordinates: [9.851159, 47.582299]
+            },
+            properties: {
+              title: 'Demmel Gruppe',
+              description: 'germany'
+            }
+          }]
+      };
+    
+      geojson.features.forEach(function(marker) {
+    
+        // create a HTML element for each feature
+        var el = document.createElement('div');
+        el.className = 'marker ' + marker.properties.description;
+    
+        // make a marker for each feature and add to the map
+        new mapboxgl.Marker(el, { offset: [-50 / 2, -50 / 2] })
+          .setLngLat(marker.geometry.coordinates)
+          .addTo(map);
+      });
+      map.scrollZoom.disable();
+</script>

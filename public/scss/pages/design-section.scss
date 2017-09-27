@@ -1,0 +1,18 @@
+.design-section {
+  display: block;
+  min-height: calc(100vh - 260px);
+
+  .main-header-image {
+    background-image: url('../assets/design-header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+  }
+
+  .contact-form {
+    width: 400px;
+    margin: 60px auto 0;
+    max-width: 100%;
+  }
+}

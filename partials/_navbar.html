@@ -1,15 +1,21 @@
-<nav class="main-nav-bar animated slideInDown">
+<nav class="main-nav-bar">
   <a href="/">
     <img class="logo" src="assets/logo.png"/>
   </a>
   <ul class="main-list">
-    <li><a href="#">Design</a></li>
-    <li><a href="#">Product</a></li>
-    <li><a href="#">Capabilities</a></li>
-    <li><a href="#">Company</a></li>
+    <li><a href="/design" id="designLink">Design</a></li>
+    <li><a href="/product/flexible-printed-electronics/" id="productLink">Product</a></li>
+    <li><a href="#" id="capabilitiesLink">Capabilities</a></li>
+    <li><a href="/company" id="companyLink">Company</a></li>
   </ul>
   <div class="phone">
     <i class="fa fa-phone" aria-hidden="true"></i>
     <a href="tel:65-6779-1113">(65) 6779 1113</a>
   </div>
 </nav>
+
+<script>
+  $(document).ready(function() {
+    $('#' + '@@param' + 'Link').addClass("active");
+  });
+</script>

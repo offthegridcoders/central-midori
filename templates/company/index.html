@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<partial src="_head.html"></partial>
+
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.css' rel='stylesheet' />
+
+<body>
+<partial src="_navbar.html" param="company"></partial>
+<section class="company-section">
+  <div class="main-header-image"></div>
+  <article>
+    <div class="standard-article-content gray">
+      <h3>&#8212; company &#8212;</h3>
+      <h4>central midori international</h4>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+      <p><img src="assets/history.jpg" class="center"/></p>
+    </div>
+    <div class="standard-article-content market-component">
+      <h3>Markets</h3>
+      <partial src="_market-list.html" className="market-list white"></partial>
+
+      <div class="button-wrapper-center">
+        <a href="/product/flexible-printed-electronics">
+          <button class="branded-btn">
+            Learn More
+          </button>
+        </a>
+      </div>
+    </div>
+    <div id='map' class="map-box-component"></div>
+
+    <div class="standard-article-content light-green">
+      <h3>&#8212; contact us &#8212;</h3>
+      <h4>ready to start? Let us help</h4>
+      <partial src="_contact-form.html"></partial>
+    </div>
+  </article>
+</section>
+<partial src="_footer.html" data="Footer"></partial>
+</body>
+</html>
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoidGhld2lja2Vkd2ViZGV2IiwiYSI6ImNqODJkYzBwajJrcnkzMnMwZ2hnb2NmcGEifQ.44JG6hnm7JiMDBxZ6L35Jw';
+
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/light-v9',
+    center: [43.6793, 33.2232],
+    zoom: 1
+  });
+
+  var geojson = {
+    type: 'FeatureCollection',
+    features: [{
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [103.790222, 1.296437]
+      },
+      properties: {
+        title: 'CMI',
+        description: 'singapore'
+      }
+    },
+      {
+        type: 'Feature',
+        geometry: {
+          type: 'Point',
+          coordinates: [9.851159, 47.582299]
+        },
+        properties: {
+          title: 'Demmel Gruppe',
+          description: 'germany'
+        }
+      }]
+  };
+
+  geojson.features.forEach(function(marker) {
+
+    // create a HTML element for each feature
+    var el = document.createElement('div');
+    el.className = 'marker ' + marker.properties.description;
+
+    // make a marker for each feature and add to the map
+    new mapboxgl.Marker(el, { offset: [-50 / 2, -50 / 2] })
+      .setLngLat(marker.geometry.coordinates)
+      .addTo(map);
+  });
+  map.scrollZoom.disable();
+
+</script>

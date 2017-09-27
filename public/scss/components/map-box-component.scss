@@ -1,0 +1,20 @@
+.map-box-component {
+  height: 400px;
+  width: 100%;
+
+  .marker {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .singapore {
+    background-image: url('../assets/singapore_mini_logo.png');
+  }
+
+  .germany {
+    background-image: url('../assets/germany_mini_logo.png');
+  }
+}

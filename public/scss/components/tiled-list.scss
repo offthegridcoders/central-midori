@@ -42,4 +42,17 @@
       text-decoration: none;
     }
   }
+
+  &.gray {
+    background-color: $lightGray;
+  }
+
+  &.white {
+    background-color: #fff;
+  }
+
+  &.market-list {
+    width: 800px;
+    margin: 0 auto;
+  }
 }

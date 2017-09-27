@@ -6,6 +6,7 @@
 @import './defaults';
 @import './animate';
 @import './buttons';
+@import './forms';
 
 // PARTIALS
 @import './partials/navbar';
@@ -17,8 +18,12 @@
 @import './components/tiled-list';
 @import './components/statistics-article-content';
 @import './components/standard-slider-component';
+@import './components/standard-chart-component';
+@import './components/map-box-component';
 
 // PAGES
 @import './pages/homepage';
 @import './pages/flexible-printed-electronics-section';
 @import './pages/light-guides-section';
+@import './pages/company-section';
+@import './pages/design-section';

@@ -2,13 +2,13 @@
 <html lang="en">
 <partial src="_head.html"></partial>
 <body>
-<partial src="_navbar.html" param="Homepage"></partial>
+<partial src="_navbar.html" param="product"></partial>
 <section class="flexible-printed-electronics-section">
   <div class="main-header-image"></div>
   <article>
     <div class="standard-article-content gray">
       <h3>&#8212; Manufacturing &#8212;</h3>
-      <h4>Flexible Printed Electronics</h4>
+      <h4 class="animated pulse">Flexible Printed Electronics</h4>
       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
     </div>
     <div class="standard-article-text">
@@ -72,19 +72,60 @@
           <br/>100Mohms (Thru hole)</li>
       </ul>
     </div>
-    <div class="standard-article-content">
+    <div class="standard-chart-component">
+      <h4>Example Data</h4>
+      <h5>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </h5>
+      <div class="chart">
+        <canvas id="myChart" width="400" height="200"></canvas>
+      </div>
+    </div>
+    <div class="standard-article-content gray">
       <h3>&#8212; See Other &#8212;</h3>
       <h4>Solutions</h4>
-      <partial src="_product-list.html"></partial>
-      <div class="button-wrapper-center">
-        <p>Dont see what you want?<br/><br/></p>
-        <button class="branded-btn">
-          Contact Us
-        </button>
-      </div>
+      <partial src="_product-list.html" className="gray"></partial>
     </div>
   </article>
 </section>
 <partial src="_footer.html" data="Footer"></partial>
 </body>
 </html>
+
+<script>
+  var ctx = document.getElementById("myChart").getContext('2d');
+  var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3],
+        backgroundColor: [
+          'rgba(255, 99, 132, 0.2)',
+          'rgba(54, 162, 235, 0.2)',
+          'rgba(255, 206, 86, 0.2)',
+          'rgba(75, 192, 192, 0.2)',
+          'rgba(153, 102, 255, 0.2)',
+          'rgba(255, 159, 64, 0.2)'
+        ],
+        borderColor: [
+          'rgba(255,99,132,1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)',
+          'rgba(153, 102, 255, 1)',
+          'rgba(255, 159, 64, 1)'
+        ],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        yAxes: [{
+          ticks: {
+            beginAtZero:true
+          }
+        }]
+      }
+    }
+  });
+</script>

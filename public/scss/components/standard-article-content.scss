@@ -36,9 +36,32 @@
     width: 700px;
     max-width: 100%;
     margin: 40px auto;
+    display: block;
   }
 
   &.gray {
     background-color: $lightGray;
+  }
+
+  &.light-green {
+    background-color: $brandLightGreen;
+
+    h2,
+    h3,
+    h4 {
+      color: #fff;
+    }
+
+    input,
+    textarea,
+    select {
+      background-color: rgba(255, 255, 255, 0.76);
+      border: 0;
+    }
+
+    input[type='submit'] {
+      color: #fff;
+      background-color: darken($brandLightGreen, 30%);
+    }
   }
 }
