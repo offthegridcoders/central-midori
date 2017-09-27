@@ -1,13 +1,20 @@
 .main-nav-bar {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.93);
   padding: 10px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  box-sizing: border-box;
+  border-bottom: solid 1px $lightGray;
 
   a {
     text-decoration: none;
   }
 
   .logo {
-    height: 50px;
+    height: 40px;
     display: inline-block;
     vertical-align: middle;
     margin-right: 60px;
@@ -71,7 +78,7 @@
     .fa-phone {
       display: inline-block;
       vertical-align: middle;
-      color: $primaryColor;
+      color: $brandLightBlue;
     }
 
     .fa-phone {
