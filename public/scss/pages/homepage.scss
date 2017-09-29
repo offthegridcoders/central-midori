@@ -2,12 +2,36 @@
   min-height: calc(100vh - 260px);
 
   .main-header-image {
-    background-image: url('../assets/homepage-header.jpg');
+    background-image: url('../assets/header-homepage.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    padding: 400px 100px 100px;
+    background-position: center right;
+    height: 500px;
     position: relative;
+
+    header {
+      padding: 140px 0 0 80px;
+      max-width: 50%;
+      background-color: transparent;
+
+      h1 {
+        font-size: 36px;
+        color: #fff;
+
+        span {
+          font-size: 20px;
+        }
+      }
+
+      p {
+        line-height: 24px;
+        color: #fff;
+      }
+    }
+  }
+
+  .main-header {
+    background-color: $lightGray;
   }
 
   article {
