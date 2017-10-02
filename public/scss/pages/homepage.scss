@@ -1,6 +1,11 @@
 .homepage-section {
   min-height: calc(100vh - 260px);
 
+  .first {
+    margin-top: 0;
+    padding-top: 20px;
+  }
+
   .main-header-image {
     background-image: url('../assets/header-homepage.jpg');
     background-repeat: no-repeat;

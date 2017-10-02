@@ -55,4 +55,31 @@
     width: 800px;
     margin: 0 auto;
   }
+
+  &.design-list {
+    li {
+      box-shadow: none;
+      background-color: transparent;
+      width: 300px;
+
+      .img {
+        border-radius: 50%;
+        width: 170px;
+        height:170px;
+        background-size: cover;
+        background-position: center;
+        margin: 0 auto 40px;
+      }
+
+      &:hover {
+        transform: scale(1);
+      }
+    }
+
+    h5 {
+      padding: 0;
+      font-size: 18px;
+      min-height: auto;
+    }
+  }
 }
