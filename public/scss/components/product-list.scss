@@ -44,6 +44,13 @@
     }
   }
 
+  .image-only {
+    height: 340px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
   &.gray {
     background-color: $lightGray;
   }
