@@ -6,7 +6,7 @@ jQuery(function($) {$('.slider').sss({
 function tradeShowNotify(){
   notif({
     type: "info",
-    msg: "<p>We are attending a trade show Oct 15th, 2017<br/>Click <a href='#'>here</a> for more information.</a></p>",
+    msg: "<p>We are attending a trade show Oct 15th, 2017<br/>Click <a href='https://www.idtechex.com/usa2017/show/en/'>here</a> for more information.</a></p>",
     width: 500,
     height: 100,
     position: "bottom",
