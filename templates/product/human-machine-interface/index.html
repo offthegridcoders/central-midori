@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<partial src="_head.html"></partial>
+<body>
+<partial src="_navbar.html" param="product"></partial>
+<section class="flexible-printed-electronics-section">
+  <div class="main-header-image"></div>
+  <article>
+    <div class="standard-article-content gray">
+      <h3>&#8212; Product &#8212;</h3>
+      <h4 class="animated pulse">Human Machine Interface</h4>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div class="standard-article-text">
+      <h4>Membrane Switch</h4>
+      <!--<img src="assets/membrane_switch.jpg" class="medium pull-left"/>-->
+
+      <p>With over 25 years of experience, Central Midori is recognized
+        in Asia as an expert in design, engineering and manufacturing
+        of customized membrane switches. Membrane switch is one
+        of the most cost effective and reliable Human Machine
+        Interface. It is screen-printed on polyester and polycarbonate
+        film using conductive ink and UV curable dielectric.
+      </p>
+      <div class="slider standard-slider-component medium pull-left">
+        <img src="assets/hmi/slide001.jpg" />
+        <img src="assets/hmi/slide002.jpg" />
+        <img src="assets/hmi/slide003.jpg" />
+        <img src="assets/hmi/slide004.jpg" />
+        <img src="assets/hmi/slide005.jpg" />
+        <img src="assets/hmi/slide006.jpg" />
+      </div>
+      <p>Many of our customers come to us with a vague description
+        of the application. The role of our engineers is to work
+        closely with the customers to review the requirements,
+        to design together the most cost effective solution and
+        to manufacture a few proof-of-concept prototypes. When
+        the customer is satisfied and the design is frozen, we move
+        to a full scale qualification using production equipment and a
+        complete report is submitted to the customer. Upon final approval
+        the project transitions to production.</p>
+
+        <p>Central Midori offers non-tactile constructions (without direct
+        sensitive feedback) - or tactile solutions with metal domes and
+        polydomes, which provide immediate tactile response. A polydome
+        can be designed (i.e. diameter and height) to meet the actuation
+        force and the switch travel distance required by the application.
+        Metal domes come in different shapes and sizes with actuation forces
+        from 170 to 420 grams and travel distances typically
+        from 0.178 to 0.89mm.</p>
+      <p>Shielding is available for EMI/RFI protection and ESD discharge.</p>
+
+      <p>Single point LEDs and passive components are assembled using low temperature conductive adhesive.</p>
+
+      <p>Membrane switch can be customized with embossing. We offer Pillow and Rim embossing but also tiny dimple for visually impaired people.</p>
+
+
+      <p>Our circuits can be terminated with ZIF connectors or Insulation Displacement Contacts (crimped) and plastic housing. Through-hole printing is also available for double-sided construction.</p>
+
+      <p>Coated window lens are incorporated for LCD. It can be clear or color tinted with anti-glare, gloss or matt finish.</p>
+
+      <p>Recent developments in light guide material are providing innovative solutions for a uniform backlighting using a limited count of side-firing LEDs and guide foils that are designed to evenly distribute light.</p>
+
+      <p>Upon request our membrane switches can be designed for IP67 environment protection certification.</p>
+      <h4>Touch Sensor</h4>
+      <p>While some applications continue to require traditional tactile switches, the last 10 years have seen an explosion of a variety of touch technologies.
+        Capacitive touch market is still dominated by ITO substrate (Indium Tin Oxide) but several factors including cost, lack of flexibility and low adhesion on plastic film are limiting the possibilities of 3D design.</p>
+
+      <p>Recent developments of clear conductive inks printed on flexible substrate offer technically attractive and cost effective solutions.
+        CMI has been testing various inks from the top 3 suppliers on the market by printing on substrates such as PET, PC and PMMA. Flexibility and adhesion are significantly better than ITO. Total cost of material and processing is reasonably lower.
+      </p>
+      <div class="button-wrapper-center">
+        <button class="branded-btn">
+          Get your flexible electronics
+        </button>
+      </div>
+    </div>
+    <div class="statistics-article-content gray">
+      <h4>Specifications</h4>
+      <ul>
+        <li><span>Thickness tolerance:</span> +/- 10%</li>
+        <li><span>Dimensional tolerance:</span> +/- 0.1mm (hard tool)</li>
+        <li><span>Operating temperature range:</span> -20°C to +50°C</li>
+        <li><span>Storage temperature range:</span><br/>-20°C to +80°C (no embossing)
+          <br/>-20°C to +50°C (Edge ad Rim soft tool embossing)
+          <br/>-20°C to +70°C (Hard tool embossing)</li>
+        <li><span>Maximum operating and storage humidity:</span> 93%RH</li>
+      </ul>
+      <ul>
+        <li><span>Life cycle:</span> 1 million actuation</li>
+        <li><span>Max voltage:</span> 30V dc</li>
+        <li><span>Max current:</span> 20mA (between contacts)</li>
+        <li><span>Contact resistance:</span> <100ohms typical</li>
+        <li><span>Dielectric resistance:</span><br/>10Mohms (with crossover)
+          <br/>100Mohms (Thru hole)</li>
+      </ul>
+    </div>
+    <!--<div class="standard-chart-component">-->
+      <!--<h4>Example Data</h4>-->
+      <!--<h5>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </h5>-->
+      <!--<div class="chart">-->
+        <!--<canvas id="myChart" width="400" height="200"></canvas>-->
+      <!--</div>-->
+    <!--</div>-->
+    <div class="standard-article-content white">
+      <h3>&#8212; See Other &#8212;</h3>
+      <h4>Solutions</h4>
+      <partial src="_product-list.html" className="white"></partial>
+    </div>
+  </article>
+</section>
+<partial src="_footer.html" data="Footer"></partial>
+</body>
+</html>
+
+<script>
+  var ctx = document.getElementById("myChart").getContext('2d');
+  var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3],
+        backgroundColor: [
+          'rgba(255, 99, 132, 0.2)',
+          'rgba(54, 162, 235, 0.2)',
+          'rgba(255, 206, 86, 0.2)',
+          'rgba(75, 192, 192, 0.2)',
+          'rgba(153, 102, 255, 0.2)',
+          'rgba(255, 159, 64, 0.2)'
+        ],
+        borderColor: [
+          'rgba(255,99,132,1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)',
+          'rgba(153, 102, 255, 1)',
+          'rgba(255, 159, 64, 1)'
+        ],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        yAxes: [{
+          ticks: {
+            beginAtZero:true
+          }
+        }]
+      }
+    }
+  });
+</script>

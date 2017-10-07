@@ -1,5 +1,11 @@
 .standard-article-text {
-  padding: 60px 40px;
+  padding: 40px 40px;
+
+  h4 {
+    font-size: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
 
   p {
     line-height: 38px;
@@ -18,7 +24,7 @@
       width: 250px;
     }
     &.medium {
-      width: 450px;
+      width: 400px;
     }
     &.large {
       width: 800px;
