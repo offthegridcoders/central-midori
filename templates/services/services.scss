@@ -1,0 +1,11 @@
+@import '../../public/scss/palette';
+
+.services-section {
+  .main-header-image {
+    background-image: url('../assets/services/assets/header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 450px;
+  }
+}

@@ -1,0 +1,39 @@
+@import '../../public/scss/palette';
+
+.capabilities-section {
+  .main-header-image {
+    background-image: url('../assets/capabilities/assets/header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 450px;
+  }
+
+  .special-width {
+    padding-top: 60px;
+
+    ul {
+      margin: 0;
+      width: 40%;
+      display: inline-block;
+      box-sizing: border-box;
+
+      &:first-child {
+        margin-right: 10%;
+      }
+    }
+  }
+
+  .flat-list {
+    margin: 10px 0 0 0;
+    padding-left: 20px;
+
+    li {
+      margin-bottom: 15px;
+    }
+  }
+
+  .standard-list {
+    margin-bottom: 40px;
+  }
+}

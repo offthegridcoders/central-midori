@@ -1,6 +1,11 @@
 p {
   line-height: 38px;
 
+  em {
+    font-style: normal;
+    font-weight: bold;
+  }
+
   &.center {
     text-align: center;
   }
