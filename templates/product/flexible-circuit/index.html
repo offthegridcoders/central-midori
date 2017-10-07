@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <partial src="_head.html"></partial>
+  <body>
+    <!-- NAVBAR -->
+    <partial src="navbar/_navbar.html" param="product"></partial>
+
+    <section class="flexible-circuit-section">
+      <!-- HEADER -->
+      <div class="main-header-image"></div>
+
+      <!-- SUB HEADER-->
+      <article class="standard-article gray">
+        <span class="dashed-header">&#8212; Product &#8212;</span>
+        <h1 class="animated pulse">Flexible Circuit</h1>
+        <p class="center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+      </article>
+
+      <!-- MEMBRANE SWITCH PRIMARY CONTENT -->
+      <article class="standard-article">
+        <h2>Details</h2>
+        <p>The most generally accepted definition of a Flexible Printed Circuit is a pattern of conductive traces laminated or printed on a flexible substrate.
+          At CMI we specialize in selectively applying polymer materials using precision screen printing onto flexible substrate. The manufacturing technology is by nature “additive” which means that no material is removed during the production process as opposed to “subtractive” when circuits are formed by etching a metal foil (normally of copper).
+          In so called additive flexible printed circuit, conductors are typically printed with silver or carbon ink.</p>
+        <p>Multi layer circuits can be produced either by printing crossovers or silver-through-hole to provide an electrical connection between the top and bottom surfaces.
+          Components are mounted using conductive adhesive.
+          Besides simplicity and low cost our technology has a very low environmental impact with no chemical etching and plating processes.
+        </p>
+        <div class="button-wrapper-center">
+          <button class="branded-btn">
+            Get your Graphic Overlay
+          </button>
+        </div>
+      </article>
+
+      <!-- OTHER SOLUTIONS -->
+      <article class="standard-article gray">
+        <span class="dashed-header">&#8212; See Other &#8212;</span>
+        <h1>Solutions</h1>
+        <partial src="product-list/_product-list.html" className="gray"></partial>
+      </article>
+
+    </section>
+
+    <!-- FOOTER -->
+    <partial src="footer/_footer.html" data="Footer"></partial>
+  </body>
+</html>

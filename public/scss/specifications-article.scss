@@ -1,0 +1,29 @@
+@import './palette';
+
+.specifications-article {
+  text-align: center;
+  padding: 40px;
+
+  ul {
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+
+    li {
+      margin-bottom: 15px;
+      line-height: 30px;
+    }
+
+    span {
+      font-weight: 600;
+    }
+  }
+
+  &.gray {
+    background-color: $lightGray;
+  }
+
+  &.white {
+    background-color: #fff;
+  }
+}

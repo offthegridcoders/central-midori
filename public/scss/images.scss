@@ -1,0 +1,32 @@
+img {
+  &.center {
+    margin: 0 auto;
+    display: block;
+  }
+
+  &.thumb {
+    width: 100px;
+  }
+
+  &.small {
+    width: 250px;
+  }
+
+  &.medium {
+    width: 350px;
+  }
+
+  &.large {
+    width: 800px;
+  }
+
+  &.pull-left {
+    float: left;
+    margin-right: 20px;
+  }
+
+  &.pull-right {
+    float: right;
+    margin-left: 20px;
+  }
+}

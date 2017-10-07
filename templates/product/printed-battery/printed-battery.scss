@@ -1,0 +1,12 @@
+@import '../../../public/scss/palette';
+
+.printed-battery-section {
+  .main-header-image {
+    //background-image: url('../../assets/product/printed-battery/assets/header.jpg');
+    background-color: $brandGray;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+  }
+}

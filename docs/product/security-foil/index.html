@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Central Midori</title>
+        <base href="/" />
+        <!--<base href="/central-midori/"/>-->
+        <meta name="description" content="Central Midori">
+        <meta name="author" content="Stephen Young">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700"
+        rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://use.fontawesome.com/dc9c2f2973.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script src="vendor/sss/sss.min.js"></script>
+        <link rel="stylesheet" href="vendor/sss/sss.css" type="text/css"
+        media="all">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.js"></script>
+        <link rel="stylesheet" href="vendor/notifit/notifit.css" type="text/css"
+        media="all">
+        <script src="vendor/notifit/notifit.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </head>
+    
+    <body>
+        <!-- NAVBAR -->
+        <nav class="main-nav-bar"> <a href="/">
+    <img class="logo" src="assets/navbar/assets/logo.png"/>
+  </a>
+
+            <ul class="main-list">
+                <li><a href="#" id="productLink">Product</a>
+
+                </li>
+                <li><a href="#" id="designLink">Services</a>
+
+                </li>
+                <li><a href="#" id="capabilitiesLink">Capabilities</a>
+
+                </li>
+                <li><a href="#" id="companyLink">Company</a>
+
+                </li>
+            </ul>
+            <div class="phone"> <i class="fa fa-phone" aria-hidden="true"></i>
+ <a href="tel:65-6779-1113">(+65) 6779 1113</a>
+
+            </div>
+        </nav>
+        <script>
+            $(document).ready(function() {
+                $('#' + 'product' + 'Link').addClass("active");
+              });
+        </script>
+        <section class="security-foil-section">
+            <!-- HEADER -->
+            <div class="main-header-image"></div>
+            <!-- SUB HEADER-->
+            <article class="standard-article gray"> <span class="dashed-header">&#8212; Product &#8212;</span>
+
+                 <h1 class="animated pulse">Security Foil</h1>
+
+                <p class="center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                    nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
+                    wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+                    lobortis nisl ut aliquip ex ea commodo consequat.</p>
+            </article>
+            <!-- MEMBRANE SWITCH PRIMARY CONTENT -->
+            <article class="standard-article">
+                 <h2>Details</h2>
+
+                <p>Our tamper proof security foil consists of a single or double sided printed
+                    circuit which uses different adhesive systems, so circuits tend to be broken
+                    when removal is attempted.</p>
+                <p>The circuit pattern is a dense sensor mesh whose role is to detect any
+                    effort to drill through the foil.</p>
+                <p>Finally the circuit is folded or embossed and wrapped around the part
+                    of the device to be protected in such a way that future attacks are prevented
+                    from all directions.</p>
+                <p>In some cases the circuit will have to be bonded onto the plastic material
+                    to offer an even better protection.</p>
+                <p>Components and bare chips are sometimes mounted on the security mesh using
+                    a low temperature conductive adhesive generally followed by UV encapsulation
+                    for better mechanical performance.</p>
+                <div class="button-wrapper-center">
+                    <button class="branded-btn">Get your Security Foil</button>
+                </div>
+            </article>
+            <!-- SPECIFICATIONS -->
+            <article class="specifications-article gray">
+                 <h2>Specifications</h2>
+
+                <ul>
+                    <li><span>Typical security mesh pitch:</span> 0.7mm</li>
+                    <li><span>Minimum bending radius:</span> 1mm</li>
+                    <li><span>Circuit resistance can be tailored from:</span> 0.015 Ohm per sq
+                        to 30 Ohm per sq</li>
+                    <li><span>Tested for accelerated aging at:</span> 75℃ under 85% RH for 196h</li>
+                </ul>
+            </article>
+            <!-- OTHER SOLUTIONS -->
+            <article class="standard-article white"> <span class="dashed-header">&#8212; See Other &#8212;</span>
+
+                 <h1>Solutions</h1>
+
+                <ul class="product-list-component white">
+                    <li> <a href="product/flexible-circuit/">
+      <img src="assets/product-list/list-items/item1.png"/>
+      <h5>Flexible Circuit</h5>
+      <p>A technology with the potential to revolutionize electronics as we know it</p>
+    </a>
+
+                    </li>
+                    <li> <a href="product/light-guides/">
+      <img src="assets/product-list/list-items/item2.png"/>
+      <h5>Light Guides</h5>
+      <p>Designed to provide a uniform illumination with a minimum number of LEDs</p>
+    </a>
+
+                    </li>
+                    <li> <a href="product/human-machine-interface">
+      <img src="assets/product-list/list-items/item3.png"/>
+      <h5>Membrane Switch</h5>
+      <p>Expert in design, engineering and manufacturing of customize membrane switches.</p>
+    </a>
+
+                    </li>
+                    <li> <a href="product/graphic-overlay">
+      <img src="assets/product-list/list-items/item4.png"/>
+      <h5>Graphic Overlays</h5>
+      <p>Color matching capabilities consistently guarantee your brand recognition.</p>
+    </a>
+
+                    </li>
+                    <li> <a href="product/security-foil/">
+      <img src="assets/product-list/list-items/item5.png"/>
+      <h5>Security Foil</h5>
+      <p>3D multi-directional protextion against physical intrusion.</p>
+    </a>
+
+                    </li>
+                    <li> <a href="product/force-sensors/">
+      <img src="assets/product-list/list-items/item6.png"/>
+      <h5>Force Sensors</h5>
+      <p>Pressure sensitive ink formulation is customized to meet the application requirements</p>
+    </a>
+
+                    </li>
+                    <li class="image-only" style="background-image: url('assets/product-list/list-items/screenprinting2.jpg" ');"></li>
+  <li>
+    <a href="product/printed-battery/">
+      <img src="assets/product-list/list-items/printedbattery.jpg"/>
+      <h5>Printed Battery</h5>
+      <p>Enfucell SoftBattery® is a disposable, thin and flexible printed power source for devices.</p>
+    </a>
+  </li>
+  <li class="image-only"
+      style="background-image: url('assets/product-list/list-items/laser_cutting.jpg ');"></li>
+</ul>
+      </article>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer clearfix">
+    <div class="right">
+        <ul>
+            <li><a href="#">Contact</a>
+            </li>
+            <li><a href="#">Careers</a>
+            </li>
+            <li><a href="#">Blog</a>
+            </li>
+            <li><a href="#">Resources</a>
+            </li>
+            <li><a href="#">Product Data Sheets</a>
+            </li>
+            <li><a href="#">Conflict Minerals Policy</a>
+            </li>
+            <li><a href="#">ISO 9001</a>
+            </li>
+            <li><a href="#">Terms & Conditions</a>
+            </li>
+        </ul>
+    </div>
+    <div class="left">
+        <p><span>CMI</span> Central Midori International</p>
+        <p>Singapore | Germany | USA</p>
+        <p class="small">&copy; 2017 Central-Midori (Int'l) Pte Ltd.
+                    All Rights Reserved</p>
+                        </div>
+                        </footer>
+    </body>
+
+</html>

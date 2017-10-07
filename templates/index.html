@@ -2,46 +2,57 @@
 <html lang="en">
   <partial src="_head.html"></partial>
   <body>
-    <partial src="_navbar.html" param="Homepage"></partial>
+    <!-- NAVBAR -->
+    <partial src="navbar/_navbar.html" param="Homepage"></partial>
+
     <section class="homepage-section">
-      <div class="main-header-image">
-        <header class="animated fadeIn main-header">
+
+      <!-- HEADER -->
+      <header class="animated fadeIn homepage-header">
+        <div class="content">
           <h1>Central Midori International <span>(CMI)</span><br/> Bringing <em>
             Innnovation</em> to <em>Manufacturing</em></h1>
-          <p>CMI is a technology manugacturer bringing design and engineering
+          <p class="center">CMI is a technology manugacturer bringing design and engineering
             expertise to make products better. With German oversight and Asian
             efficiency, CMI is skilled, flexible, and agile.</p>
-        </header>
-      </div>
-      <article>
-        <div class="standard-article-content">
-          <h3>&#8212; manufacturing &#8212;</h3>
-          <h4>what we offer</h4>
-          <partial src="_product-list.html" className="white"></partial>
         </div>
-        <div class="standard-article-content gray">
-          <h3>&#8212; Get started &#8212;</h3>
-          <h4 class="animated fadeIn">Development Centre</h4>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-            consequat.</p>
-          <partial src="_design-list.html"></partial>
-          <div class="button-wrapper-center">
-            <button class="branded-btn">
-              Talk to our experts
-            </button>
-          </div>
-        </div>
-        <div class="standard-article-content">
-          <h3>&#8212; featured &#8212;</h3>
-          <h4>Markets</h4>
-          <partial src="_market-list.html"></partial>
+      </header>
+
+      <!-- MANUFACTURING -->
+      <article class="standard-article">
+        <span class="dashed-header">&#8212; manufacturing &#8212;</span>
+        <h1 class="brand-header">what we offer</h1>
+        <partial src="product-list/_product-list.html" className="white"></partial>
+      </article>
+
+      <!-- DEVELOPMENT CENTER -->
+      <article class="standard-article gray">
+        <span class="dashed-header">&#8212; get started &#8212;</span>
+        <h1 class="animated fadeIn">Development Centre</h1>
+        <p class="center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+          volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+          ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+          consequat.</p>
+        <partial src="design-list/_design-list.html"></partial>
+        <div class="button-wrapper-center">
+          <button class="branded-btn">
+            Talk to our experts
+          </button>
         </div>
       </article>
+
+      <!-- MARKETS -->
+      <article class="standard-article">
+        <span class="dashed-header">&#8212; featured &#8212;</span>
+        <h1>Markets</h1>
+        <partial src="market-list/_market-list.html"></partial>
+      </article>
+
     </section>
-    <partial src="_footer.html" data="Footer"></partial>
+
+    <!-- FOOTER -->
+    <partial src="footer/_footer.html" data="Footer"></partial>
 
   <script>
     tradeShowNotify();

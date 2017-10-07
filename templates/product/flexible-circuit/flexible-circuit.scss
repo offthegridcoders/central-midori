@@ -1,0 +1,11 @@
+@import '../../../public/scss/palette';
+
+.flexible-circuit-section {
+  .main-header-image {
+    background-image: url('../../assets/product/flexible-circuit/assets/header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+  }
+}

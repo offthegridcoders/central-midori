@@ -1,0 +1,69 @@
+@import '../palette';
+
+.standard-article-content {
+  padding: 60px 0;
+
+  h3,
+  h4 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  h4 {
+    font-size: 50px;
+    color: $brandLightBlue;
+    margin: 40px 20px;
+  }
+
+  p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 38px;
+    max-width: 800px;
+    margin: 0 auto;
+
+    a {
+      color: $primaryColor;
+      text-decoration: none;
+    }
+  }
+
+  img.center {
+    width: 700px;
+    max-width: 100%;
+    margin: 40px auto;
+    display: block;
+  }
+
+  &.gray {
+    background-color: $lightGray;
+  }
+
+  &.light-green {
+    background-color: $brandLightGreen;
+
+    h2,
+    h3,
+    h4 {
+      color: #fff;
+    }
+
+    input,
+    textarea,
+    select {
+      background-color: rgba(255, 255, 255, 0.76);
+      border: 0;
+    }
+
+    input[type='submit'] {
+      color: #fff;
+      background-color: darken($brandLightGreen, 30%);
+    }
+  }
+}

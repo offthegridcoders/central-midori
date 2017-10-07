@@ -2,31 +2,13 @@
 @import './normalize';
 
 // DEFAULTS AND HELPERS
-@import './palette';
 @import './defaults';
 @import './animate';
-@import './buttons';
-@import './forms';
 @import './vendor-overrides';
-
-// PARTIALS
-@import './partials/navbar';
-@import './partials/footer';
-
-// COMPONENTS
-@import './components/standard-article-content';
-@import './components/standard-article-text';
-@import './components/product-list';
-@import './components/design-list';
-@import './components/markets-list';
-@import './components/statistics-article-content';
-@import './components/standard-slider-component';
-@import './components/standard-chart-component';
-@import './components/map-box-component';
-
-// PAGES
-@import './pages/homepage';
-@import './pages/flexible-printed-electronics-section';
-@import './pages/light-guides-section';
-@import './pages/company-section';
-@import './pages/design-section';
+@import './buttons';
+@import './typeography';
+@import './headers';
+@import './article';
+@import './standard-slider-component';
+@import './specifications-article';
+@import './images';

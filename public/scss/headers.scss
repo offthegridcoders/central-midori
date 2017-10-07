@@ -1,0 +1,16 @@
+@import './palette';
+
+h1 {
+  font-size: 50px;
+  color: $brandLightBlue;
+  margin: 40px 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: $brandGray;
+  text-align: center;
+  margin: 30px 20px;
+  font-size: 30px;
+}

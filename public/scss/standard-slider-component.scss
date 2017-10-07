@@ -1,0 +1,32 @@
+@import './palette';
+
+.standard-slider-component {
+  margin: 0 auto;
+
+  &.small {
+    width: 250px;
+  }
+  &.medium {
+    width: 400px;
+  }
+  &.large {
+    width: 800px;
+  }
+  &.full {
+    width: 100%;
+  }
+  &.pull-left {
+    float: left;
+    margin-right: 20px;
+  }
+  &.pull-right {
+    float: right;
+    margin-left: 20px;
+  }
+  &.center {
+    margin: 0 auto;
+    display: block;
+    width: 400px;
+    max-width: 100%;
+  }
+}

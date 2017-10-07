@@ -1,0 +1,11 @@
+@import '../../../public/scss/palette';
+
+.graphic-overlay-section {
+  .main-header-image {
+    background-image: url('../../assets/product/graphic-overlay/assets/header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+  }
+}

@@ -1,0 +1,13 @@
+@import './palette.scss';
+
+.standard-article {
+  padding: 60px 40px;
+
+  &.gray {
+    background-color: $lightGray;
+  }
+
+  &.white {
+    background-color: #fff;
+  }
+}

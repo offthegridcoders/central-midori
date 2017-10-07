@@ -4,6 +4,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 var clean = require('gulp-clean');
+var concat = require('gulp-concat');
 
 const htmlPartial = require('gulp-html-partial');
 
@@ -17,19 +18,26 @@ gulp.task('html', function () {
       basePath: 'partials/'
     }))
     .pipe(gulp.dest('./docs/'));
-
-  return gulp.src('./docs/partials/', {read: false})
-    .pipe(clean());
 });
 
 gulp.task('sass', function () {
-  return gulp.src('./public/scss/style.scss')
+  gulp.src([
+    './public/**/*.scss',
+    './templates/**/*.scss',
+    './partials/**/*.scss'
+  ])
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(concat('style.css')) // this is what was missing
     .pipe(gulp.dest(dist.css));
 });
 
 gulp.task('copy-images', function () {
-  gulp.src('./public/assets/**/**.*')
+  gulp.src([
+    './partials/**/*.jpg',
+    './partials/**/*.png',
+    './templates/**/*.jpg',
+    './templates/**/*.png'
+  ])
     .pipe(gulp.dest('./docs/assets/'));
 });
 
@@ -43,12 +51,32 @@ gulp.task('copy-vendor', function () {
     .pipe(gulp.dest('./docs/vendor/'));
 });
 
-gulp.task('default', ['sass', 'html', 'copy-images', 'copy-vendor', 'copy-js'], function() {
+gulp.task('default', ['build']);
+
+gulp.task('build', ['clean']);
+
+gulp.task('clean', function() {
+  return gulp.src('./docs/', {read: false})
+    .pipe(clean());
+});
+
+gulp.task('build', ['clean', 'sass', 'html', 'copy-images', 'copy-vendor', 'copy-js'], function() {
   browserSync.init({
     server: "./docs"
   });
-  gulp.watch('./public/assets/**/**.*', ['copy-images']).on('change', browserSync.reload);
-  gulp.watch('./public/scss/**/*.scss', ['sass']).on('change', browserSync.reload);
+
+  gulp.watch([
+    './partials/**/*.jpg',
+    './partials/**/*.png',
+    './templates/**/*.jpg',
+    './templates/**/*.png'
+  ], ['copy-images']).on('change', browserSync.reload);
+
+  gulp.watch([
+    './public/**/*.scss',
+    './templates/**/*.scss',
+    './partials/**/*.scss'
+  ], ['sass']).on('change', browserSync.reload);
   gulp.watch('./templates/**/*.html', ['html']).on('change', browserSync.reload);
   gulp.watch('./partials/**/*.html', ['html']).on('change', browserSync.reload);
   gulp.watch('./public/js/**/*.js', ['copy-js']).on('change', browserSync.reload);

@@ -1,18 +1,54 @@
 <!doctype html>
 <html lang="en">
-<partial src="_head.html"></partial>
-<body>
-<partial src="_navbar.html" param="Homepage"></partial>
-<section class="light-guides-section">
-  <div class="main-header-image"></div>
-  <article>
-    <div class="standard-article-content gray">
-      <h3>&#8212; Manufacturing &#8212;</h3>
-      <h4>Light Guides</h4>
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-    </div>
-  </article>
-</section>
-<partial src="_footer.html" data="Footer"></partial>
-</body>
+  <partial src="_head.html"></partial>
+  <body>
+    <!-- NAVBAR -->
+    <partial src="navbar/_navbar.html" param="product"></partial>
+
+    <section class="light-guide-section">
+      <!-- HEADER -->
+      <div class="main-header-image"></div>
+
+      <!-- SUB HEADER-->
+      <article class="standard-article gray">
+        <span class="dashed-header">&#8212; Product &#8212;</span>
+        <h1 class="animated pulse">Light Guides</h1>
+        <p class="center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+      </article>
+
+      <!-- MEMBRANE SWITCH PRIMARY CONTENT -->
+      <article class="standard-article">
+        <h2>Details</h2>
+        <p>We are offering thin and flexible solutions for the illumination of your human-machine Interface.</p>
+        <p>As you cannot place a discreet LED below each dome switch, light guide films are designed to
+        provide a uniform illumination with a minimum number of LEDs.</p>
+        <p>CMI have developed a unique technology which consists of a thin flexible material with printed dots
+        arranged in a particular pattern.</p>
+        <p>The base film provides high transparency along with high flexibility while the printed ink diffuses the
+        light effectively.</p>
+        <p>The side firing LEDs are mounted along one or more edges of the light guide film. The unreflected
+        light travels through the film until it gets diffused in the dot printed area.</p>
+        <p>Not all applications require thin material and CMI has also developed a PMMA light guide panel. The
+        transparent acrylic material can be directly CO2 laser-engraved with microstructures or printed with
+        ink dots (similar to the light guide film).</p>
+        <p>PMMA typical thicknesses vary from 1mm to 3mm while we recommend a thin film of 250µm.</p>
+        <div class="button-wrapper-center">
+          <button class="branded-btn">
+            Get your Light Guides
+          </button>
+        </div>
+      </article>
+
+      <!-- OTHER SOLUTIONS -->
+      <article class="standard-article gray">
+        <span class="dashed-header">&#8212; See Other &#8212;</span>
+        <h1>Solutions</h1>
+        <partial src="product-list/_product-list.html" className="gray"></partial>
+      </article>
+
+    </section>
+
+    <!-- FOOTER -->
+    <partial src="footer/_footer.html" data="Footer"></partial>
+  </body>
 </html>

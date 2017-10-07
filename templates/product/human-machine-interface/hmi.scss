@@ -1,0 +1,11 @@
+@import '../../../public/scss/palette';
+
+.hmi-section {
+  .main-header-image {
+    background-image: url('../../assets/product/human-machine-interface/assets/membrane_header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+  }
+}
