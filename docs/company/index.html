@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Central Midori</title>
+        <base href="/" />
+        <!--<base href="/central-midori/"/>-->
+        <meta name="description" content="Central Midori">
+        <meta name="author" content="Stephen Young">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700"
+        rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://use.fontawesome.com/dc9c2f2973.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script src="vendor/sss/sss.min.js"></script>
+        <link rel="stylesheet" href="vendor/sss/sss.css" type="text/css"
+        media="all">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.js"></script>
+        <link rel="stylesheet" href="vendor/notifit/notifit.css" type="text/css"
+        media="all">
+        <script src="vendor/notifit/notifit.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </head>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.css'
+    rel='stylesheet' />
+    
+    <body>
+        <!-- NAVBAR -->
+        <nav class="main-nav-bar"> <a href="/">
+    <img class="logo" src="assets/navbar/assets/logo.png"/>
+  </a>
+
+            <ul class="main-list">
+                <li><a href="product/human-machine-interface" id="productLink">Product</a>
+
+                </li>
+                <li><a href="services" id="servicesLink">Services</a>
+
+                </li>
+                <li><a href="capabilities" id="capabilitiesLink">Capabilities</a>
+
+                </li>
+                <li><a href="company" id="companyLink">Company</a>
+
+                </li>
+            </ul>
+            <div class="phone"> <i class="fa fa-phone" aria-hidden="true"></i>
+ <a href="tel:65-6779-1113">(+65) 6779 1113</a>
+
+            </div>
+        </nav>
+        <script>
+            $(document).ready(function() {
+                $('#' + 'company' + 'Link').addClass("active");
+              });
+        </script>
+        <section class="company-section">
+            <!-- HEADER -->
+            <div class="main-header-image"></div>
+            <!-- SUB HEADER-->
+            <article class="standard-article"> <span class="dashed-header">&#8212; Central Midori International  &#8212;</span>
+
+                <h1
+                class="animated pulse">Company (Page Under Construction)</h1>
+                    <p class="center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
+                        wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+                        lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                     <h2>Demmel Groupe (notes)</h2>
+
+                    <img src="assets/company/assets/demmel-groupe.jpg" class="center large"
+                    />
+                     <h2>History (notes)</h2>
+
+                    <img src="assets/company/assets/history.jpg" class="center large" />
+            </article>
+            <article class="standard-article"></article>
+            <div id='map' class="map-box-component"></div>
+        </section>
+        <!-- FOOTER -->
+        <footer class="main-footer clearfix">
+            <div class="right">
+                <ul>
+                    <li><a href="#">Contact</a>
+
+                    </li>
+                    <li><a href="#">Careers</a>
+
+                    </li>
+                    <li><a href="#">Blog</a>
+
+                    </li>
+                    <li><a href="#">Resources</a>
+
+                    </li>
+                    <li><a href="#">Product Data Sheets</a>
+
+                    </li>
+                    <li><a href="#">Conflict Minerals Policy</a>
+
+                    </li>
+                    <li><a href="#">ISO 9001</a>
+
+                    </li>
+                    <li><a href="#">Terms & Conditions</a>
+
+                    </li>
+                </ul>
+            </div>
+            <div class="left">
+                <p><span>CMI</span> Central Midori International</p>
+                <p>Singapore | Germany | USA</p>
+                <p class="small">&copy; 2017 Central-Midori (Int'l) Pte Ltd. All Rights Reserved</p>
+            </div>
+        </footer>
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoidGhld2lja2Vkd2ViZGV2IiwiYSI6ImNqODJkYzBwajJrcnkzMnMwZ2hnb2NmcGEifQ.44JG6hnm7JiMDBxZ6L35Jw';
+              var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/mapbox/light-v9',
+                center: [43.6793, 33.2232],
+                zoom: 2
+              });
+              var geojson = {
+                type: 'FeatureCollection',
+                features: [{
+                  type: 'Feature',
+                  geometry: {
+                    type: 'Point',
+                    coordinates: [103.790222, 1.296437]
+                  },
+                  properties: {
+                    title: 'CMI',
+                    description: 'singapore'
+                  }
+                },
+                  {
+                    type: 'Feature',
+                    geometry: {
+                      type: 'Point',
+                      coordinates: [9.851159, 47.582299]
+                    },
+                    properties: {
+                      title: 'Demmel Gruppe',
+                      description: 'germany'
+                    }
+                  }]
+              };
+              geojson.features.forEach(function(marker) {
+                // create a HTML element for each feature
+                var el = document.createElement('div');
+                el.className = 'marker ' + marker.properties.description;
+                // make a marker for each feature and add to the map
+                new mapboxgl.Marker(el, { offset: [-50 / 2, -50 / 2] })
+                  .setLngLat(marker.geometry.coordinates)
+                  .addTo(map);
+              });
+              map.scrollZoom.disable();
+        </script>
+    </body>
+
+</html>

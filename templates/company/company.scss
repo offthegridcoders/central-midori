@@ -1,0 +1,32 @@
+@import '../../public/scss/palette';
+
+.company-section {
+  .main-header-image {
+    background-image: url('../assets/company/assets/header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 450px;
+  }
+
+  .map-box-component {
+    height: 600px;
+    width: 100%;
+
+    .marker {
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .singapore {
+      background-image: url('../assets/company/assets/singapore_mini_logo.png');
+    }
+
+    .germany {
+      background-image: url('../assets/company/assets/germany_mini_logo.png');
+    }
+  }
+}
