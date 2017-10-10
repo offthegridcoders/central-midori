@@ -41,6 +41,11 @@ gulp.task('copy-images', function () {
     .pipe(gulp.dest('./docs/assets/'));
 });
 
+gulp.task('copy-public-assets', function () {
+  gulp.src(['./public/assets/**/*.*'])
+    .pipe(gulp.dest('./docs/favicon/'));
+});
+
 gulp.task('copy-js', function () {
   gulp.src('./public/js/**/**.js')
     .pipe(gulp.dest('./docs/js/'));
@@ -60,7 +65,7 @@ gulp.task('clean', function() {
     .pipe(clean());
 });
 
-gulp.task('build', ['clean', 'sass', 'html', 'copy-images', 'copy-vendor', 'copy-js'], function() {
+gulp.task('build', ['clean', 'sass', 'html', 'copy-images', 'copy-vendor', 'copy-js', 'copy-public-assets'], function() {
   browserSync.init({
     server: "./docs"
   });
@@ -80,4 +85,5 @@ gulp.task('build', ['clean', 'sass', 'html', 'copy-images', 'copy-vendor', 'copy
   gulp.watch('./templates/**/*.html', ['html']).on('change', browserSync.reload);
   gulp.watch('./partials/**/*.html', ['html']).on('change', browserSync.reload);
   gulp.watch('./public/js/**/*.js', ['copy-js']).on('change', browserSync.reload);
+  gulp.watch('./public/assets/**/*.*', ['copy-public-assets']).on('change', browserSync.reload);
 });
