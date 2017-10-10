@@ -1,0 +1,32 @@
+@import '../../public/scss/palette';
+
+.data-sheets-section {
+  padding-top: 70px;
+
+  h2 {
+    margin-top: 0;
+    text-align: left;
+    font-size: 22px;
+
+    span {
+      display: block;
+      text-transform: uppercase;
+      margin-top: 15px;
+      font-size: 30px;
+    }
+  }
+
+  a {
+    display: inline-block;
+    float: left;
+    cursor: pointer;
+
+    img {
+      cursor: pointer;
+    }
+  }
+
+  .button-wrapper-center {
+    margin-top: 40px;
+  }
+}

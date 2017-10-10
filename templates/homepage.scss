@@ -10,7 +10,7 @@
 
   header {
     display: block;
-    padding: 140px 0 140px 80px;
+    padding: 200px 0 140px 80px;
     background-color: transparent;
     background-image: url('../assets/homepage-header.jpg');
     background-repeat: no-repeat;
@@ -19,7 +19,7 @@
     position: relative;
 
     .content {
-      max-width: 50%;
+      max-width: 55%;
     }
 
     h1 {
@@ -37,6 +37,7 @@
     p {
       line-height: 24px;
       color: #fff;
+      text-align: left;
     }
   }
 

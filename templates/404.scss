@@ -1,0 +1,15 @@
+@import '../public/scss/palette';
+
+.section-404 {
+  padding-top: 70px;
+  background-color: $lightGray;
+
+  p {
+    text-align: center;
+
+    a {
+      color: $primaryColor;
+      font-weight: bold;
+    }
+  }
+}

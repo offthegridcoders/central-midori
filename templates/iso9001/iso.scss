@@ -1,0 +1,14 @@
+@import '../../public/scss/palette';
+
+.iso-section {
+  padding-top: 70px;
+  text-align: center;
+  background-color: $lightGray;
+
+  img {
+    display: inline-block;
+    width: 40%;
+    margin: 2%;
+    box-shadow: rgba(0, 0, 0, 0.28) 0 0 8px;
+  }
+}
