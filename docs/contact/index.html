@@ -45,6 +45,9 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
+        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.js'></script>
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.css'
+        rel='stylesheet' />
     </head>
     
     <body>
@@ -78,8 +81,9 @@
               });
         </script>
         <section class="contact-section">
+            <div id='map' class="map-box-component"></div>
             <!-- MANUFACTURING -->
-            <article class="standard-article"> <span class="dashed-header">&#8212; contact us &#8212;</span>
+            <article class="standard-article gray"> <span class="dashed-header">&#8212; contact us &#8212;</span>
 
                  <h1 class="brand-header">We want to hear from you</h1>
 
@@ -87,7 +91,76 @@
                     nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
                     wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
                     lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
-                    dolor in hendrerit in vulputate velit esse molestie consequat</p>
+                    dolor in hendrerit in vulputate velit esse molestie consequat. Please contact
+                    us by calling, or emailing <a href="mailto:centralmidori@central-midori.com.sg">centralmidori@central-midori.com.sg</a>.</a>
+                </p>
+                <ul class="contact-list">
+                    <li>
+                        <img src='assets/market-list/assets/image-placeholder-500x500.jpg' />
+                        <div class="content">
+                             <h2>Central Midori International HQ</h2>
+ <a class="phone" href="tel:+65 6779 1113">+65 6779 1113</a>
+ <a class="email"
+                            href="mailto:centralmidori@central-midori.com.sg">centralmidori@central-midori.com.sg</a>
+ <address>Block 67 Ayer Rajah Crescent<br/>#05-26,<br/>Singapore<br/>139950</address>
+
+                        </div>
+                    </li>
+                    <li>
+                        <img src='assets/market-list/assets/image-placeholder-500x500.jpg' />
+                        <div class="content">
+                             <h2>Demmel KG</h2>
+ <a class="phone" href="tel:+49-8382-27920-31">+49-8382-27920-31</a>
+
+                            <a
+                            class="email" href="mailto:stefanie.schweiger@demmel-gmbh.com">stefanie.schweiger@demmel-gmbh.com</a> <address>Demmel GmbH & Co. KG,<br/>Heuriedweg 30 * D-88131<br/>Lindau, Germany</address>
+
+                        </div>
+                    </li>
+                    <li>
+                        <img src='assets/market-list/assets/image-placeholder-500x500.jpg' />
+                        <div class="content">
+                             <h2>Singular Manufacturing</h2>
+
+                             <h3>United States East Coast</h3>
+
+                            <p class="name">Todd Richard, Director of Sales</p> <a class="phone" href="tel:(603) 427-1400">(603) 427-1400</a>
+
+                            <a
+                            class="email" href="mailto:toddr@singular-mfg.com">toddr@singular-mfg.com</a> <a class="website" href="http://www.singular-mfg.com">www.singular-mfg.com</a>
+ <address>170 West Road<br/>Portsmouth, NH<br/>03801</address>
+
+                        </div>
+                    </li>
+                    <li>
+                        <img src='assets/market-list/assets/image-placeholder-500x500.jpg' />
+                        <div class="content">
+                             <h2>DLK Technical Sales</h2>
+
+                             <h3>United States Mid-West</h3>
+
+                            <p class="name">Dan Knuf, President</p> <a class="phone" href="tel:(414) 526-5978">(414) 526-5978</a>
+
+                            <a
+                            class="email" href="mailto:danknuf@dlktechnicalsales.com">danknuf@dlktechnicalsales.com</a> <address>INCN76 W22301 Cherry Hill Rd,<br/>Lisbon, WI<br/>53089</address>
+
+                        </div>
+                    </li>
+                    <li>
+                        <img src='assets/market-list/assets/image-placeholder-500x500.jpg' />
+                        <div class="content">
+                             <h2>Intercon Global Solutions Inc.</h2>
+
+                             <h3>United States West Coast</h3>
+
+                            <p class="name">Romeo Visan, President</p> <a class="phone" href="tel:(714) 553-2596">(714) 553-2596</a>
+
+                            <a
+                            class="email" href="mailto:rvisan@interconglobal.com">rvisan@interconglobal.com</a> <address>2 Blue Spruce,<br/>Irvine, CA<br/>92620</address>
+
+                        </div>
+                    </li>
+                </ul>
             </article>
         </section>
         <!-- FOOTER -->
@@ -123,6 +196,51 @@
                 <p class="small">&copy; 2017 Central-Midori (Int'l) Pte Ltd. All Rights Reserved</p>
             </div>
         </footer>
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoidGhld2lja2Vkd2ViZGV2IiwiYSI6ImNqODJkYzBwajJrcnkzMnMwZ2hnb2NmcGEifQ.44JG6hnm7JiMDBxZ6L35Jw';
+              var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/mapbox/light-v9',
+                center: [43.6793, 33.2232],
+                zoom: 2
+              });
+              var geojson = {
+                type: 'FeatureCollection',
+                features: [
+                  {
+                    type: 'Feature',
+                    geometry: {
+                      type: 'Point',
+                      coordinates: [103.790222, 1.296437]
+                    },
+                    properties: {
+                      title: 'CMI',
+                      description: 'singapore'
+                    }
+                  },
+                  {
+                    type: 'Feature',
+                    geometry: {
+                      type: 'Point',
+                      coordinates: [9.851159, 47.582299]
+                    },
+                    properties: {
+                      title: 'Demmel Gruppe',
+                      description: 'germany'
+                    }
+                  }]
+              };
+              geojson.features.forEach(function(marker) {
+                // create a HTML element for each feature
+                var el = document.createElement('div');
+                el.className = 'marker ' + marker.properties.description;
+                // make a marker for each feature and add to the map
+                new mapboxgl.Marker(el, { offset: [-50 / 2, -50 / 2] })
+                  .setLngLat(marker.geometry.coordinates)
+                  .addTo(map);
+              });
+              map.scrollZoom.disable();
+        </script>
     </body>
 
 </html>

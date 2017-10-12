@@ -1,3 +1,90 @@
+@import '../../public/scss/palette';
+
 .contact-section {
   padding-top: 70px;
+
+  a {
+    color: $brandLightBlue;
+  }
+
+  .contact-list {
+    margin: 40px;
+    padding: 0;
+    list-style: none;
+
+    li {
+      margin: 20px;
+      display: inline-block;
+      box-sizing: border-box;
+      width: calc(90% / 2);
+      vertical-align: top;
+      text-align: left;
+      border-radius: 10px;
+      overflow: hidden;
+      //background-color: #fff;
+      //box-shadow: rgba(0, 0, 0, 0.28) 0 0 8px;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin: 0 0 10px;
+      padding: 0;
+      text-align: left;
+    }
+
+    h3 {
+      font-size: 16px;
+      margin: 0;
+    }
+
+    a {
+      display: block;
+      color: $brandLightBlue;
+      text-decoration: none;
+    }
+
+    .name {
+
+    }
+
+    .phone {
+      margin-bottom: 5px;
+    }
+
+    address {
+      margin-top: 15px;
+    }
+
+    img {
+      width: 100%;
+      height: 150px;
+      display: none;
+    }
+  }
+
+  .map-box-component {
+    height: 400px;
+    width: 100%;
+    margin-top: 40px;
+
+    .marker {
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .singapore {
+      background-image: url('../assets/company/assets/singapore_mini_logo.png');
+    }
+
+    .germany {
+      background-image: url('../assets/company/assets/germany_mini_logo.png');
+    }
+  }
 }
