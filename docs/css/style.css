@@ -39,27 +39,13 @@ p{line-height:38px}p em{font-style:normal;font-weight:bold}p.center{text-align:c
 
 #ui_notifIt{height:auto !important;padding:15px;background-color:#d62c1b !important}#ui_notifIt p{line-height:30px !important;font-family:'Open Sans', sans-serif !important}#ui_notifIt a{color:#fff !important}
 
-.flexible-circuit-section .main-header-image{background-image:url("../../assets/product/flexible-circuit/assets/header.jpg");background-repeat:no-repeat;background-size:cover;background-position:center;height:400px}
-
-.force-sensors-section .main-header-image{background-image:url("../../assets/product/force-sensors/assets/header.jpg");background-repeat:no-repeat;background-size:cover;background-position:center;height:400px}
-
-.hmi-section .main-header-image{background-image:url("../../assets/product/human-machine-interface/assets/membrane_header.jpg");background-repeat:no-repeat;background-size:cover;background-position:center;height:400px}
-
-.graphic-overlay-section .main-header-image{background-image:url("../../assets/product/graphic-overlay/assets/header.jpg");background-repeat:no-repeat;background-size:cover;background-position:center;height:400px}
-
-.light-guide-section .main-header-image{background-image:url("../../assets/product/light-guides/assets/header.jpg");background-repeat:no-repeat;background-size:cover;background-position:center;height:400px}
-
-.printed-battery-section .main-header-image{background-color:#3a3a3a;background-repeat:no-repeat;background-size:cover;background-position:center;height:400px}
-
-.security-foil-section .main-header-image{background-image:url("../../assets/product/security-foil/assets/header.jpg");background-repeat:no-repeat;background-size:cover;background-position:center;height:400px}
-
 .section-404{padding-top:70px;background-color:#f6f7f9}.section-404 p{text-align:center}.section-404 p a{color:#d62c1b;font-weight:bold}
 
 .homepage-section{min-height:calc(100vh - 260px)}.homepage-section .first{margin-top:0;padding-top:20px}.homepage-section header{display:block;padding:200px 0 140px 80px;background-color:transparent;background-image:url("../assets/homepage-header.jpg");background-repeat:no-repeat;background-size:cover;background-position:center right;position:relative}.homepage-section header .content{max-width:55%}.homepage-section header h1{font-size:36px;color:#fff;text-align:left;margin:0;text-transform:none}.homepage-section header h1 span{font-size:20px}.homepage-section header p{line-height:24px;color:#fff;text-align:left}.homepage-section .main-header{background-color:#f6f7f9}.homepage-section article header{padding:80px 20px;text-align:center}.homepage-section article header h1{font-size:40px;margin:0 0 40px}.homepage-section article header p{font-size:24px;line-height:38px;padding:0 100px}
 
-.careers-section{padding-top:70px}
+.company-section .main-header-image{background-image:url("../assets/company/assets/header.jpg");background-repeat:no-repeat;background-size:cover;background-position:center center;height:450px}.company-section article{padding:150px 40px}.company-section .regular-padding{padding:60px 40px}.company-section .map-box-component{height:600px;width:100%;margin-top:40px}.company-section .map-box-component .marker{width:40px;height:40px;cursor:pointer;background-size:contain;background-repeat:no-repeat}.company-section .map-box-component .singapore{background-image:url("../assets/company/assets/singapore_mini_logo.png")}.company-section .map-box-component .germany{background-image:url("../assets/company/assets/germany_mini_logo.png")}.company-section .logo-list{list-style:none;margin-top:50px}.company-section .logo-list .company-image{float:left;width:180px;margin-right:30px}.company-section .logo-list .logo{width:80px;display:inline-block;vertical-align:middle;margin-right:20px}.company-section .logo-list h3{display:inline-block;vertical-align:middle;font-size:20px}.company-section .logo-list h3 span{font-size:12px;margin-left:10px;opacity:.9}.company-section .logo-list li{margin-bottom:40px}.company-section .history-image{margin-top:40px}
 
-.company-section .main-header-image{background-image:url("../assets/company/assets/header.jpg");background-repeat:no-repeat;background-size:cover;background-position:center center;height:450px}.company-section .map-box-component{height:600px;width:100%}.company-section .map-box-component .marker{width:40px;height:40px;cursor:pointer;background-size:contain;background-repeat:no-repeat}.company-section .map-box-component .singapore{background-image:url("../assets/company/assets/singapore_mini_logo.png")}.company-section .map-box-component .germany{background-image:url("../assets/company/assets/germany_mini_logo.png")}
+.careers-section{padding-top:70px}
 
 .conflict-minerals-section{padding-top:70px}.conflict-minerals-section li{margin-bottom:15px}
 
@@ -76,6 +62,20 @@ p{line-height:38px}p em{font-style:normal;font-weight:bold}p.center{text-align:c
 .services-section .main-header-image{background-image:url("../assets/services/assets/header.jpg");background-repeat:no-repeat;background-size:cover;background-position:top center;height:450px}.services-section article{padding:150px 40px}.services-section .regular-padding{padding:60px 40px}.services-section .sub-nav li{margin:0 20px}
 
 .terms-section{padding-top:70px}.terms-section .header{font-size:16px;font-weight:bold}.terms-section .footer{text-align:center;font-style:italic;margin:60px 20px 20px}
+
+.flexible-circuit-section .main-header-image{background-image:url("../../assets/product/flexible-circuit/assets/header.jpg");background-repeat:no-repeat;background-size:cover;background-position:center;height:400px}
+
+.force-sensors-section .main-header-image{background-image:url("../../assets/product/force-sensors/assets/header.jpg");background-repeat:no-repeat;background-size:cover;background-position:center;height:400px}
+
+.graphic-overlay-section .main-header-image{background-image:url("../../assets/product/graphic-overlay/assets/header.jpg");background-repeat:no-repeat;background-size:cover;background-position:center;height:400px}
+
+.hmi-section .main-header-image{background-image:url("../../assets/product/human-machine-interface/assets/membrane_header.jpg");background-repeat:no-repeat;background-size:cover;background-position:center;height:400px}
+
+.security-foil-section .main-header-image{background-image:url("../../assets/product/security-foil/assets/header.jpg");background-repeat:no-repeat;background-size:cover;background-position:center;height:400px}
+
+.light-guide-section .main-header-image{background-image:url("../../assets/product/light-guides/assets/header.jpg");background-repeat:no-repeat;background-size:cover;background-position:center;height:400px}
+
+.printed-battery-section .main-header-image{background-color:#3a3a3a;background-repeat:no-repeat;background-size:cover;background-position:center;height:400px}
 
 .design-list-component{background-color:#f6f7f9;margin:40px 0 0;padding:0;list-style:none;text-align:center;box-sizing:border-box}.design-list-component li{display:inline-block;margin:20px;transition:ease all .3s;vertical-align:top;box-sizing:border-box;box-shadow:none;background-color:transparent;width:300px}.design-list-component li .img{border-radius:50%;width:170px;height:170px;background-size:cover;background-position:center;margin:0 auto 40px}.design-list-component li:hover{transform:scale(1)}.design-list-component li h5{margin:15px 0;font-size:26px;line-height:34px;padding:0 20px}.design-list-component li p{padding:0 35px 20px;line-height:24px;font-size:14px;min-height:110px}.design-list-component li a{color:#3a3a3a;text-decoration:none}.design-list-component h5{padding:0;font-size:18px}.design-list-component.gray{background-color:#f6f7f9}.design-list-component.white{background-color:#fff}.design-list-component.market-list{width:800px;margin:0 auto}
 

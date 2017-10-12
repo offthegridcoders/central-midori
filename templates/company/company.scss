@@ -9,9 +9,19 @@
     height: 450px;
   }
 
+
+  article {
+    padding: 150px 40px;
+  }
+
+  .regular-padding {
+    padding: 60px 40px;
+  }
+
   .map-box-component {
     height: 600px;
     width: 100%;
+    margin-top: 40px;
 
     .marker {
       width: 40px;
@@ -28,5 +38,43 @@
     .germany {
       background-image: url('../assets/company/assets/germany_mini_logo.png');
     }
+  }
+
+  .logo-list {
+    list-style: none;
+    margin-top: 50px;
+
+    .company-image {
+      float: left;
+      width: 180px;
+      margin-right: 30px;
+    }
+
+    .logo {
+      width: 80px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 20px;
+    }
+
+    h3 {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 20px;
+
+      span {
+        font-size: 12px;
+        margin-left: 10px;
+        opacity: .9;
+      }
+    }
+
+    li {
+      margin-bottom: 40px;
+    }
+  }
+
+  .history-image {
+    margin-top: 40px;
   }
 }

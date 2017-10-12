@@ -42,8 +42,11 @@ gulp.task('copy-images', function () {
 });
 
 gulp.task('copy-public-assets', function () {
-  gulp.src(['./public/assets/**/*.*'])
+  gulp.src(['./public/assets/favicon/*.*'])
     .pipe(gulp.dest('./docs/favicon/'));
+
+  gulp.src(['./public/assets/logos/*.*'])
+    .pipe(gulp.dest('./docs/logos/'));
 });
 
 gulp.task('copy-js', function () {

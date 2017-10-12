@@ -81,27 +81,108 @@
               });
         </script>
         <section class="company-section">
+            <nav class="sub-nav">
+                <ul>
+                    <li> <a href="/company/#demmel-gruppe">Demmel Gruppe</a>
+
+                    </li>
+                    <li> <a href="/company/#history">History</a>
+
+                    </li>
+                    <li> <a href="/company/#locations">Locations</a>
+
+                    </li>
+                </ul>
+            </nav>
             <!-- HEADER -->
             <div class="main-header-image"></div>
             <!-- SUB HEADER-->
-            <article class="standard-article"> <span class="dashed-header">&#8212; Central Midori International  &#8212;</span>
+            <article class="standard-article regular-padding"> <span class="dashed-header">&#8212; Central Midori International  &#8212;</span>
 
                 <h1
-                class="animated pulse">Company (Page Under Construction!)</h1>
-                    <p class="center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-                        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
-                        wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-                        lobortis nisl ut aliquip ex ea commodo consequat.</p>
-                     <h2>Demmel Groupe (notes)</h2>
+                class="animated pulse">Company</h1>
+                    <p class="center">Founded in Singapore in 1988 with the transfer of technology from Japan,
+                        CMI is recognized in South East Asia for his expertise in flexible printed
+                        electronic. Our main products include membrane switch, graphic overlay,
+                        sensor and security foil. We have enjoyed a steady growth by expanding
+                        our position into electronic market segments like Industrial Control, Instrumentation,
+                        Banking and Medical. Our mission is to enable our customers to make their
+                        products better, cheaper and faster through our core technology expertise,
+                        process efficiency and a nimble organization. We focus on customers who
+                        require continuous assistance from design through manufacturing. CMI is
+                        a subsidiary of Demmel Gruppe with locations in Germany, Switzerland and
+                        China.</p>
+            </article> <span id="demmel-gruppe"></span>
 
-                    <img src="assets/company/assets/demmel-groupe.jpg" class="center large"
-                    />
-                     <h2>History (notes)</h2>
+            <article class="standard-article gray">
+                 <h2>Demmel Groupe</h2>
 
-                    <img src="assets/company/assets/history.jpg" class="center large" />
+                <p class="center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                    nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
+                    wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+                    lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                <ul class="logo-list">
+                    <li class="clearfix">
+                        <img class="company-image" src='assets/market-list/assets/image-placeholder-500x500.jpg'
+                        />
+                        <img class="logo" src="logos/logo-demmel-ag.png" />
+                         <h3>DEMMEL AG<span>DEMMEL GRUPPE</span></h3>
+
+                        <p>Located in the beautiful region of Allgäu in southern Germany, Demmel
+                            AG is a leading company of industrial identification, decoration and communication.</p>
+                    </li>
+                    <li class="clearfix">
+                        <img class="company-image" src='assets/market-list/assets/image-placeholder-500x500.jpg'
+                        />
+                        <img class="logo" src="logos/logo-rawe.png" />
+                         <h3>RAWE Electronic<span>DEMMEL GRUPPE</span></h3>
+
+                        <p>RAWE Electronic GmbH produces electronic assemblies and systems for a
+                            broad range of industries such as medical, industrial electronics, automotive
+                            and commercial vehicle industy.</p>
+                    </li>
+                    <li class="clearfix">
+                        <img class="company-image" src='assets/market-list/assets/image-placeholder-500x500.jpg'
+                        />
+                        <img class="logo" src="logos/logo-demmel.png" />
+                         <h3>DEMMEL<span>GmbH & Co. KG</span></h3>
+
+                        <p>Located in Lindau on the eastern side of Lake Constance (Bodensee in German)
+                            DEMMEL KG is specialised in trading for DEMMEL GRUUPPE.</p>
+                    </li>
+                    <li class="clearfix">
+                        <img class="company-image" src='assets/market-list/assets/image-placeholder-500x500.jpg'
+                        />
+                        <img class="logo" src="logos/logo-tefag.png" />
+                         <h3>TEFAG<span>DEMMEL GRUPPE</span></h3>
+
+                        <p>TEFAG provides electronics design and engineering services. We work closely
+                            with the customers during the design phase, create specifications and drawings
+                            and if necessary we manage the full assembly and deliver the finished product.</p>
+                    </li>
+                </ul>
+            </article> <span id="history"></span>
+
+            <article class="standard-article">
+                 <h2>History</h2>
+
+                <p class="center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                    nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
+                    wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+                    lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                <img src="assets/company/assets/history.jpg"
+                class="center large history-image" />
+            </article> <span id="locations"></span>
+
+            <article class="standard-article gray">
+                 <h2>Locations</h2>
+
+                <p class="center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                    nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
+                    wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+                    lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                <div id='map' class="map-box-component"></div>
             </article>
-            <article class="standard-article"></article>
-            <div id='map' class="map-box-component"></div>
         </section>
         <!-- FOOTER -->
         <footer class="main-footer clearfix">
@@ -146,17 +227,18 @@
               });
               var geojson = {
                 type: 'FeatureCollection',
-                features: [{
-                  type: 'Feature',
-                  geometry: {
-                    type: 'Point',
-                    coordinates: [103.790222, 1.296437]
+                features: [
+                  {
+                    type: 'Feature',
+                    geometry: {
+                      type: 'Point',
+                      coordinates: [103.790222, 1.296437]
+                    },
+                    properties: {
+                      title: 'CMI',
+                      description: 'singapore'
+                    }
                   },
-                  properties: {
-                    title: 'CMI',
-                    description: 'singapore'
-                  }
-                },
                   {
                     type: 'Feature',
                     geometry: {
