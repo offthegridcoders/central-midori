@@ -22,4 +22,39 @@
       margin: 0 20px;
     }
   }
+
+  .circle-nav {
+    ul {
+      text-align: center;
+
+      li {
+        display: inline-block;
+        width: 200px;
+        margin: 20px;
+        transition: ease all .3s;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .circle {
+        display: block;
+        width: 120px;
+        height: 120px;
+        border-radius: 400px;
+        margin: 0 auto;
+        background-size: cover;
+        background-position: center;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+    }
+  }
 }
