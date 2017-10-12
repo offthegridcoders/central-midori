@@ -54,7 +54,7 @@
   </a>
 
             <ul class="main-list">
-                <li><a href="product/human-machine-interface" id="productLink">Product</a>
+                <li><a href="product" id="productLink">Product</a>
 
                 </li>
                 <li><a href="services" id="servicesLink">Services</a>
@@ -78,6 +78,36 @@
               });
         </script>
         <section class="graphic-overlay-section">
+            <nav class="product-nav">
+                <ul>
+                    <li id="flexible-circuit"> <a href="product/flexible-circuit/">Flexible Circuit</a>
+
+                    </li>
+                    <li id="light-guides"> <a href="product/light-guides/">Light Guides</a>
+
+                    </li>
+                    <li id="hmi"> <a href="product/human-machine-interface">Human Machine Interface</a>
+
+                    </li>
+                    <li id="graphic-overlay"> <a href="product/graphic-overlay">Graphic Overlay</a>
+
+                    </li>
+                    <li id="security-foil"> <a href="product/security-foil/">Security Foil</a>
+
+                    </li>
+                    <li id="force-sensors"> <a href="product/force-sensors/">Force Sensors</a>
+
+                    </li>
+                    <li id="printed-battery"> <a href="product/printed-battery/">Printed Battery</a>
+
+                    </li>
+                </ul>
+            </nav>
+            <script>
+                $(document).ready(function() {
+                    $('#' + 'graphic-overlay').addClass("active");
+                  });
+            </script>
             <!-- HEADER -->
             <div class="main-header-image"></div>
             <!-- SUB HEADER-->

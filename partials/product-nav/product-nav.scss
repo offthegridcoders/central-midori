@@ -1,0 +1,33 @@
+@import '../../public/scss/palette';
+
+.product-nav {
+  background-color: $brandGray;
+  position: fixed;
+  top: 61px;
+  width: 100%;
+  z-index: 999;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    opacity: .8;
+    transition: ease all .2s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  .active {
+    a {
+      font-weight: bold;
+      opacity: 1;
+    }
+  }
+}
