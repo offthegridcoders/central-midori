@@ -60,7 +60,7 @@
                 <li><a href="services" id="servicesLink">Services</a>
 
                 </li>
-                <li><a href="capabilities" id="capabilitiesLink">Manufacturing</a>
+                <li><a href="manufacturing" id="manufacturingLink">Manufacturing</a>
 
                 </li>
                 <li><a href="company" id="companyLink">Company</a>
@@ -74,14 +74,36 @@
         </nav>
         <script>
             $(document).ready(function() {
-                $('#' + 'capabilities' + 'Link').addClass("active");
+                $('#' + 'manufacturing' + 'Link').addClass("active");
               });
         </script>
-        <section class="capabilities-section">
+        <section class="manufacturing-section">
+            <nav class="sub-nav">
+                <ul>
+                    <li> <a href="/manufacturing/#printing">Printing</a>
+
+                    </li>
+                    <li> <a href="/manufacturing/#color-mixing">Color Mixing</a>
+
+                    </li>
+                    <li> <a href="/manufacturing/#embossing">Embossing</a>
+
+                    </li>
+                    <li> <a href="/manufacturing/#lamination">Lamination</a>
+
+                    </li>
+                    <li> <a href="/manufacturing/#mounting">Mounting</a>
+
+                    </li>
+                    <li> <a href="/manufacturing/#integration">Integration</a>
+
+                    </li>
+                </ul>
+            </nav>
             <!-- HEADER -->
             <div class="main-header-image"></div>
             <!-- SUB HEADER-->
-            <article class="standard-article"> <span class="dashed-header">&#8212; what we provide &#8212;</span>
+            <article class="standard-article regular-padding"> <span class="dashed-header">&#8212; what we provide &#8212;</span>
 
                 <h1
                 class="animated pulse">Manufacturing</h1>
@@ -89,7 +111,8 @@
                         nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
                         wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
                         lobortis nisl ut aliquip ex ea commodo consequat.</p>
-            </article>
+            </article> <span id="printing"></span>
+
             <!-- PRINTING -->
             <article class="standard-article gray clearfix">
                  <h2>Printing</h2>
@@ -143,7 +166,8 @@
                         <li><span>Format accepted:</span> Dwg, DXF, PDF, AI, FH and CDR</li>
                     </ul>
                 </div>
-            </article>
+            </article> <span id="color-mixing"></span>
+
             <!-- COLOR MIXING -->
             <article class="standard-article clearfix">
                  <h2>Color Mixing</h2>
@@ -170,7 +194,8 @@
                     printing effects.</p>
                 <p>The following standard illuminants are available to choose from when measuring
                     color with our spectrophotometer: D65-10, D65-02, F02-10 (CWF)</p>
-            </article>
+            </article> <span id="embossing"></span>
+
             <!-- EMBOSSING -->
             <article class="standard-article gray clearfix">
                  <h2>Embossing</h2>
@@ -207,7 +232,8 @@
                 <p>Either polyester and polycarbonate materials can be embossed. Polyester
                     prefered thickness range between 50 and 200µm while polycarbonate is more
                     readily embossed in thickness between 100 and 180µm.</p>
-            </article>
+            </article> <span id="lamination"></span>
+
             <!-- LAMINATION -->
             <article class="standard-article clearfix">
                  <h2>Lamination</h2>
@@ -226,7 +252,8 @@
                 <p>No heat is necessary during the lamination process and consequently no
                     thermal stress is applied to the product, which reduces thermal distortion.
                     Our maximum lamination size is 550 X 400mm.</p>
-            </article>
+            </article> <span id="mounting"></span>
+
             <!-- COMPONENT MOUNTING -->
             <article class="standard-article gray clearfix">
                  <h2>Component Mounting</h2>
@@ -266,7 +293,8 @@
                     A spacer layer holds the domes in their positions. Domes come in various
                     shapes (i.e. square, round, triangle and oblong). The material can be stainless
                     steel or plated with gold or Nickel. Diameters vary from 6 to 20mm.</p>
-            </article>
+            </article> <span id="integration"></span>
+
             <!-- FINAL INTEGRATION -->
             <article class="standard-article clearfix">
                  <h2>Final Integration</h2>

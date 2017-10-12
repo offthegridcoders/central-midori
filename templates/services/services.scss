@@ -8,4 +8,18 @@
     background-position: top center;
     height: 450px;
   }
+
+  article {
+    padding: 150px 40px;
+  }
+
+  .regular-padding {
+    padding: 60px 40px;
+  }
+
+  .sub-nav {
+    li {
+      margin: 0 20px;
+    }
+  }
 }

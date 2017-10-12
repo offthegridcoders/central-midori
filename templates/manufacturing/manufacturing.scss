@@ -1,8 +1,8 @@
 @import '../../public/scss/palette';
 
-.capabilities-section {
+.manufacturing-section {
   .main-header-image {
-    background-image: url('../assets/capabilities/assets/header.jpg');
+    background-image: url('../assets/manufacturing/assets/header.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -22,6 +22,14 @@
         margin-right: 10%;
       }
     }
+  }
+
+  article {
+    padding: 140px 40px;
+  }
+
+  .regular-padding {
+    padding: 60px 40px;
   }
 
   .flat-list {
