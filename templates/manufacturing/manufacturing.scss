@@ -44,4 +44,19 @@
   .standard-list {
     margin-bottom: 40px;
   }
+
+  .circle-nav {
+    ul {
+      margin-top: 30px;
+    };
+
+    li {
+      margin: 0;
+      width: 160px;
+    }
+
+    h2 {
+      font-size: 18px;
+    }
+  }
 }
