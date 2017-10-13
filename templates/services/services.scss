@@ -13,6 +13,11 @@
     padding: 150px 40px;
   }
 
+  .medium {
+    margin-top: 10px;
+    margin-right: 40px;
+  }
+
   .regular-padding {
     padding: 60px 40px;
   }
@@ -21,6 +26,11 @@
     li {
       margin: 0 20px;
     }
+  }
+
+  h2 {
+    text-align: left;
+    margin-top: 0;
   }
 
   .circle-nav {
@@ -34,7 +44,7 @@
         transition: ease all .3s;
 
         &:hover {
-          transform: scale(1.05);
+          transform: scale(1.05) !important;
         }
       }
 
@@ -54,6 +64,8 @@
 
       h2 {
         font-size: 20px;
+        text-align: center;
+        margin-top: 20px;
       }
     }
   }

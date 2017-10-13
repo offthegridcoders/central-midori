@@ -47,6 +47,9 @@ gulp.task('copy-public-assets', function () {
 
   gulp.src(['./public/assets/logos/*.*'])
     .pipe(gulp.dest('./docs/logos/'));
+
+  gulp.src(['./public/assets/images/*.*'])
+    .pipe(gulp.dest('./docs/images/'));
 });
 
 gulp.task('copy-js', function () {
