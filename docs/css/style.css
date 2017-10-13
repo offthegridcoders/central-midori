@@ -51,17 +51,17 @@ p{line-height:38px}p em{font-style:normal;font-weight:bold}p.center{text-align:c
 
 .conflict-minerals-section{padding-top:70px}.conflict-minerals-section li{margin-bottom:15px}
 
-.data-sheets-section{padding-top:70px}.data-sheets-section h2{margin-top:0;text-align:left;font-size:22px}.data-sheets-section h2 span{display:block;text-transform:uppercase;margin-top:15px;font-size:30px}.data-sheets-section a{display:inline-block;float:left;cursor:pointer}.data-sheets-section a img{cursor:pointer}.data-sheets-section .button-wrapper-center{margin-top:40px}
-
 .contact-section a{color:#2e70a8}.contact-section .contact-list{margin:40px;padding:0;list-style:none}.contact-section .contact-list li{margin:20px;display:inline-block;box-sizing:border-box;width:calc(90% / 2);vertical-align:top;text-align:left;border-radius:10px;overflow:hidden}.contact-section .contact-list .content{padding:20px}.contact-section .contact-list h2{font-size:20px;margin:0 0 10px;padding:0;text-align:left}.contact-section .contact-list h3{font-size:16px;margin:0}.contact-section .contact-list a{display:block;color:#2e70a8;text-decoration:none}.contact-section .contact-list .phone{margin-bottom:5px}.contact-section .contact-list address{margin-top:15px}.contact-section .contact-list img{width:100%;height:150px;display:none}.contact-section .map-box-component{height:400px;width:100%;margin-top:40px}.contact-section .map-box-component .marker{width:50px;height:50px;cursor:pointer;background-size:contain;background-repeat:no-repeat}.contact-section .map-box-component .singapore{background-image:url("../assets/company/assets/singapore_mini_logo.png")}.contact-section .map-box-component .germany{background-image:url("../assets/company/assets/germany_mini_logo.png")}
+
+.data-sheets-section{padding-top:70px}.data-sheets-section h2{margin-top:0;text-align:left;font-size:22px}.data-sheets-section h2 span{display:block;text-transform:uppercase;margin-top:15px;font-size:30px}.data-sheets-section a{display:inline-block;float:left;cursor:pointer}.data-sheets-section a img{cursor:pointer}.data-sheets-section .button-wrapper-center{margin-top:40px}
 
 .iso-section{padding-top:70px;text-align:center;background-color:#f6f7f9}.iso-section img{display:inline-block;width:40%;margin:2%;box-shadow:rgba(0,0,0,0.28) 0 0 8px}
 
 .manufacturing-section .parallax-window{min-height:500px;background:transparent;background-position:center right}.manufacturing-section .special-width{padding-top:60px}.manufacturing-section .special-width ul{margin:0;width:40%;display:inline-block;box-sizing:border-box}.manufacturing-section .special-width ul:first-child{margin-right:10%}.manufacturing-section article{padding:140px 40px}.manufacturing-section .regular-padding{padding:60px 40px}.manufacturing-section .flat-list{margin:10px 0 0 0;padding-left:20px}.manufacturing-section .flat-list li{margin-bottom:15px}.manufacturing-section .standard-list{margin-bottom:40px}.manufacturing-section .circle-nav ul{margin-top:30px}.manufacturing-section .circle-nav li{margin:0;width:160px}.manufacturing-section .circle-nav h2{font-size:18px}
 
-.product-landing-section{padding-top:110px;background-color:#f6f7f9}
-
 .services-section .parallax-window{min-height:500px;background:transparent;background-position:center right}.services-section article{padding:150px 40px}.services-section .medium{margin-top:10px;margin-right:40px}.services-section .regular-padding{padding:60px 40px}.services-section .sub-nav li{margin:0 20px}.services-section h2{text-align:left;margin-top:0}
+
+.product-landing-section{padding-top:110px;background-color:#f6f7f9}
 
 .terms-section{padding-top:70px}.terms-section .header{font-size:16px;font-weight:bold}.terms-section .footer{text-align:center;font-style:italic;margin:60px 20px 20px}
 
