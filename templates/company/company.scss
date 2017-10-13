@@ -1,14 +1,11 @@
 @import '../../public/scss/palette';
 
 .company-section {
-  .main-header-image {
-    background-image: url('../assets/company/assets/company.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 450px;
+  .parallax-window {
+    min-height: 500px;
+    background: transparent;
+    background-position: center right;
   }
-
 
   article {
     padding: 150px 40px;

@@ -45,6 +45,7 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
+        <script src="js/parallax.min.js"></script>
     </head>
     
     <body>
@@ -109,7 +110,7 @@
                   });
             </script>
             <!-- HEADER -->
-            <div class="main-header-image"></div>
+            <div class="parallax-window"></div>
             <!-- SUB HEADER-->
             <article class="standard-article gray"> <span class="dashed-header">&#8212; Product &#8212;</span>
 
@@ -235,6 +236,9 @@
                     All Rights Reserved</p>
                         </div>
                         </footer>
+                        <script>
+                            $('.parallax-window').parallax({imageSrc: 'assets/product/force-sensors/assets/header.jpg', position: 'top center'});
+                        </script>
     </body>
 
 </html>

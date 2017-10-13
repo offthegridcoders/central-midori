@@ -15,9 +15,10 @@
   <meta name="twitter:card" content="summary_large_image">
 
   <partial src="_head.html"></partial>
-</head>
+  <script src="js/parallax.min.js"></script>
   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.js'></script>
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.css' rel='stylesheet' />
+</head>
 
   <body>
     <!-- NAVBAR -->
@@ -38,7 +39,7 @@
         </ul>
       </nav>
       <!-- HEADER -->
-      <div class="main-header-image"></div>
+      <div class="parallax-window"></div>
 
       <!-- SUB HEADER-->
       <article class="standard-article regular-padding">
@@ -146,6 +147,9 @@
           .addTo(map);
       });
       map.scrollZoom.disable();
+
+      $('.parallax-window').parallax({imageSrc: 'assets/company/assets/company.jpg', position: 'top center'});
+
     </script>
   </body>
 </html>

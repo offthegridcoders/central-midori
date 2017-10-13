@@ -45,10 +45,11 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
+        <script src="js/parallax.min.js"></script>
+        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.js'></script>
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.css'
+        rel='stylesheet' />
     </head>
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.css'
-    rel='stylesheet' />
     
     <body>
         <!-- NAVBAR -->
@@ -95,7 +96,7 @@
                 </ul>
             </nav>
             <!-- HEADER -->
-            <div class="main-header-image"></div>
+            <div class="parallax-window"></div>
             <!-- SUB HEADER-->
             <article class="standard-article regular-padding"> <span class="dashed-header">&#8212; Central Midori International  &#8212;</span>
 
@@ -264,6 +265,8 @@
                   .addTo(map);
               });
               map.scrollZoom.disable();
+        
+              $('.parallax-window').parallax({imageSrc: 'assets/company/assets/company.jpg', position: 'top center'});
         </script>
     </body>
 

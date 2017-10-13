@@ -15,6 +15,7 @@
     <meta name="twitter:card" content="summary_large_image">
 
     <partial src="_head.html"></partial>
+    <script src="js/parallax.min.js"></script>
   </head>
 
     <body>
@@ -22,9 +23,9 @@
     <partial src="navbar/_navbar.html" param="Homepage"></partial>
 
     <section class="homepage-section">
-
       <!-- HEADER -->
       <header class="animated fadeIn homepage-header">
+        <div class="parallax-window"></div>
         <div class="content">
           <h1>Central Midori International <span>(CMI)</span><br/> Bringing <em>
             Innnovation</em> to <em>Manufacturing</em></h1>
@@ -69,5 +70,8 @@
 
     <!-- FOOTER -->
     <partial src="footer/_footer.html" data="Footer"></partial>
+    <script>
+      $('.parallax-window').parallax({imageSrc: 'assets/homepage-header2.jpg', position: 'right center'});
+    </script>
   </body>
 </html>

@@ -15,6 +15,7 @@
   <meta name="twitter:card" content="summary_large_image">
 
   <partial src="_head.html"></partial>
+  <script src="js/parallax.min.js"></script>
 </head>
   <body>
     <!-- NAVBAR -->
@@ -24,7 +25,7 @@
       <partial src="product-nav/_product-nav.html" param="light-guides"></partial>
 
       <!-- HEADER -->
-      <div class="main-header-image"></div>
+      <div class="parallax-window"></div>
 
       <!-- SUB HEADER-->
       <article class="standard-article gray">
@@ -67,5 +68,8 @@
 
     <!-- FOOTER -->
     <partial src="footer/_footer.html" data="Footer"></partial>
+    <script>
+      $('.parallax-window').parallax({imageSrc: 'assets/product/light-guides/assets/header.jpg', position: 'top center'});
+    </script>
   </body>
 </html>

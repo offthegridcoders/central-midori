@@ -1,11 +1,9 @@
 @import '../../../public/scss/palette';
 
 .light-guide-section {
-  .main-header-image {
-    background-image: url('../../assets/product/light-guides/assets/header.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 400px;
+  .parallax-window {
+    min-height: 500px;
+    background: transparent;
+    background-position: center right;
   }
 }

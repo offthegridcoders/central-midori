@@ -44,6 +44,7 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
+        <script src="js/parallax.min.js"></script>
     </head>
     
     <body>
@@ -79,6 +80,7 @@
         <section class="homepage-section">
             <!-- HEADER -->
             <header class="animated fadeIn homepage-header">
+                <div class="parallax-window"></div>
                 <div class="content">
                      <h1>Central Midori International <span>(CMI)</span><br/> Bringing <em>
             Innnovation</em> to <em>Manufacturing</em></h1>
@@ -276,6 +278,9 @@
                     All Rights Reserved</p>
                         </div>
                         </footer>
+                        <script>
+                            $('.parallax-window').parallax({imageSrc: 'assets/homepage-header2.jpg', position: 'right center'});
+                        </script>
     </body>
 
 </html>
