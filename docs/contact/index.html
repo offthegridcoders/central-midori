@@ -77,7 +77,9 @@
         </nav>
         <script>
             $(document).ready(function() {
-                $('#' + '@@param' + 'Link').addClass("active");
+                var param = '"a';
+            
+                $('#' + param +'Link').addClass("active");
               });
         </script>
         <section class="contact-section">
@@ -94,35 +96,47 @@
                     dolor in hendrerit in vulputate velit esse molestie consequat. Please contact
                     us by calling, or emailing <a href="mailto:centralmidori@central-midori.com.sg">centralmidori@central-midori.com.sg</a>.</a>
                 </p>
-                <ul class="contact-list">
-                    <li>
-                        <img src='assets/market-list/assets/image-placeholder-500x500.jpg' />
-                        <div class="content">
-                             <h2>Central Midori International</h2>
+                <div class="asia-europe-wrapper">
+                    <ul class="contact-list">
+                        <li>
+                             <h2 class="h2-style">Asia</h2>
 
-                             <h3>Lorem Ipsum</h3>
+                            <img src='assets/market-list/assets/image-placeholder-500x500.jpg' />
+                            <div class="content">
+                                 <h2>Central Midori International</h2>
 
-                            <p class="name">John Doe</p> <a class="phone" href="tel:+65 6779 1113">+65 6779 1113</a>
+                                 <h3>Singapore</h3>
 
-                            <a
-                            class="email" href="mailto:centralmidori@central-midori.com.sg">centralmidori@central-midori.com.sg</a> <address>Block 67 Ayer Rajah Crescent<br/>#05-26,<br/>Singapore<br/>139950</address>
+                                <p class="name">John Doe</p> <a class="phone" href="tel:+65 6779 1113">+65 6779 1113</a>
 
-                        </div>
-                    </li>
-                    <li>
-                        <img src='assets/market-list/assets/image-placeholder-500x500.jpg' />
-                        <div class="content">
-                             <h2>Demmel KG</h2>
+                                <a
+                                class="email" href="mailto:centralmidori@central-midori.com.sg">centralmidori@central-midori.com.sg</a> <address>Block 67 Ayer Rajah Crescent<br/>#05-26,<br/>Singapore<br/>139950</address>
 
-                             <h3>Headquarters</h3>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="contact-list">
+                        <li>
+                             <h2 class="h2-style">Europe</h2>
 
-                            <p class="name">John Doe</p> <a class="phone" href="tel:+49-8382-27920-31">+49-8382-27920-31</a>
+                            <img src='assets/market-list/assets/image-placeholder-500x500.jpg' />
+                            <div class="content">
+                                 <h2>Demmel KG</h2>
 
-                            <a
-                            class="email" href="mailto:stefanie.schweiger@demmel-gmbh.com">stefanie.schweiger@demmel-gmbh.com</a> <address>Demmel GmbH & Co. KG,<br/>Heuriedweg 30 * D-88131<br/>Lindau, Germany</address>
+                                 <h3>Germany</h3>
 
-                        </div>
-                    </li>
+                                <p class="name">John Doe</p> <a class="phone" href="tel:+49-8382-27920-31">+49-8382-27920-31</a>
+
+                                <a
+                                class="email" href="mailto:stefanie.schweiger@demmel-gmbh.com">stefanie.schweiger@demmel-gmbh.com</a> <address>Demmel GmbH & Co. KG,<br/>Heuriedweg 30 * D-88131<br/>Lindau, Germany</address>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                 <h2>North America</h2>
+
+                <ul class="contact-list north-america">
                     <li>
                         <img src='assets/market-list/assets/image-placeholder-500x500.jpg' />
                         <div class="content">
@@ -207,7 +221,7 @@
               var map = new mapboxgl.Map({
                 container: 'map',
                 style: 'mapbox://styles/mapbox/light-v9',
-                center: [43.6793, 33.2232],
+                center: [-10.898437, 27.215556],
                 zoom: 1.5
               });
               var geojson = {
@@ -234,18 +248,53 @@
                       title: 'Demmel Gruppe',
                       description: 'germany'
                     }
-                  }]
+                  },
+                  {
+                    type: 'Feature',
+                    geometry: {
+                      type: 'Point',
+                      coordinates: [-73.989308, 40.741895]
+                    },
+                    properties: {
+                      title: 'Singular Manufacturing',
+                      description: 'es-east-coast'
+                    }
+                  },
+                  {
+                    type: 'Feature',
+                    geometry: {
+                      type: 'Point',
+                      coordinates: [-88.24620449999998, 43.1511187]
+                    },
+                    properties: {
+                      title: 'DLK Technical Sales',
+                      description: 'lisbon'
+                    }
+                  },
+                  {
+                    type: 'Feature',
+                    geometry: {
+                      type: 'Point',
+                      coordinates: [-117.82650490000003, 33.6845673]
+                    },
+                    properties: {
+                      title: 'DLK Technical Sales',
+                      description: 'irvine'
+                    }
+                  }
+                ]
               };
+        
               geojson.features.forEach(function(marker) {
                 // create a HTML element for each feature
                 var el = document.createElement('div');
                 el.className = 'marker ' + marker.properties.description;
                 // make a marker for each feature and add to the map
-                new mapboxgl.Marker(el, { offset: [-50 / 2, -50 / 2] })
+                new mapboxgl.Marker(el)
                   .setLngLat(marker.geometry.coordinates)
                   .addTo(map);
               });
-              map.scrollZoom.disable();
+              //map.scrollZoom.disable();
         </script>
     </body>
 

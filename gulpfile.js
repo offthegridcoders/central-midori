@@ -57,6 +57,11 @@ gulp.task('copy-js', function () {
     .pipe(gulp.dest('./docs/js/'));
 });
 
+gulp.task('copy-pdf', function () {
+  gulp.src('./templates/**/**.pdf')
+    .pipe(gulp.dest('./docs/pdf/'));
+});
+
 gulp.task('copy-vendor', function () {
   gulp.src('./vendor/**/**.*')
     .pipe(gulp.dest('./docs/vendor/'));
@@ -71,7 +76,7 @@ gulp.task('clean', function() {
     .pipe(clean());
 });
 
-gulp.task('build', ['clean', 'sass', 'html', 'copy-images', 'copy-vendor', 'copy-js', 'copy-public-assets'], function() {
+gulp.task('build', ['clean', 'sass', 'html', 'copy-images', 'copy-vendor', 'copy-js', 'copy-pdf', 'copy-public-assets'], function() {
   browserSync.init({
     server: "./docs"
   });

@@ -5,33 +5,45 @@
     color: $brandLightBlue;
   }
 
+  h2 {
+    color: $gray;
+    text-align: center;
+    margin: 30px 20px;
+    font-size: 30px;
+  }
+
+  .asia-europe-wrapper {
+    text-align: center;
+  }
+
   .contact-list {
-    margin: 40px;
+    margin: 40px 40px 80px;
     padding: 0;
     list-style: none;
+    display: inline-block;
+    vertical-align: top;
 
     li {
-      margin: 20px;
-      display: inline-block;
-      box-sizing: border-box;
-      width: calc(90% / 2);
-      vertical-align: top;
-      text-align: left;
-      border-radius: 10px;
-      overflow: hidden;
-      //background-color: #fff;
-      //box-shadow: rgba(0, 0, 0, 0.28) 0 0 8px;
+      margin: 20px auto 60px;
     }
 
     .content {
-      padding: 20px;
+      display: block;
+      text-align: center;
     }
 
     h2 {
+      color: $brandGray;
       font-size: 20px;
-      margin: 0 0 10px;
+      margin: 0 0 20px;
       padding: 0;
-      text-align: left;
+    }
+
+    .h2-style {
+      color: $gray;
+      text-align: center;
+      margin: 30px 20px;
+      font-size: 30px;
     }
 
     h3 {
@@ -46,7 +58,8 @@
     }
 
     .name {
-
+      line-height: 22px;
+      margin-top: 5px;
     }
 
     .phone {
@@ -64,14 +77,34 @@
     }
   }
 
+  .north-america {
+    text-align: center;
+    display: block;
+
+    li {
+      display: inline-block;
+      vertical-align: top;
+      max-width: 300px;
+      margin: 0 30px;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+
+    h3 {
+      font-size: 16px;
+    }
+  }
+
   .map-box-component {
     height: 400px;
     width: 100%;
     margin-top: 40px;
 
     .marker {
-      width: 50px;
-      height: 50px;
+      width: 35px;
+      height: 35px;
       cursor: pointer;
       background-size: contain;
       background-repeat: no-repeat;
@@ -81,8 +114,18 @@
       background-image: url('../assets/company/assets/singapore_mini_logo.png');
     }
 
+    .irvine,
+    .lisbon,
+    .es-east-coast  {
+      background-image: url('../logos/map-marker.png');
+    }
+
     .germany {
       background-image: url('../assets/company/assets/germany_mini_logo.png');
     }
+
+    //.es-east-coast {
+    //  background-image: url('../logos/singular.png');
+    //}
   }
 }

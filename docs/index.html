@@ -74,7 +74,9 @@
         </nav>
         <script>
             $(document).ready(function() {
-                $('#' + 'Homepage' + 'Link').addClass("active");
+                var param = 'Homepage';
+            
+                $('#' + param +'Link').addClass("active");
               });
         </script>
         <section class="homepage-section">
@@ -96,10 +98,10 @@
                  <h1 class="brand-header">what we offer</h1>
 
                 <ul class="product-list-component white">
-                    <li> <a href="product/flexible-circuit/">
-      <img src="assets/product-list/list-items/item1.png"/>
-      <h5>Flexible Circuit</h5>
-      <p>A technology with the potential to revolutionize electronics as we know it</p>
+                    <li> <a href="product/human-machine-interface">
+      <img src="assets/product-list/list-items/item3.png"/>
+      <h5 class="small-font">Human Machine Interface</h5>
+      <p>Expert in design, engineering and manufacturing of customize membrane switches.</p>
     </a>
 
                     </li>
@@ -110,10 +112,17 @@
     </a>
 
                     </li>
-                    <li> <a href="product/human-machine-interface">
-      <img src="assets/product-list/list-items/item3.png"/>
-      <h5>Membrane Switch</h5>
-      <p>Expert in design, engineering and manufacturing of customize membrane switches.</p>
+                    <li> <a href="product/force-sensors/">
+      <img src="assets/product-list/list-items/item6.png"/>
+      <h5>Force Sensors</h5>
+      <p>Pressure sensitive ink formulation is customized to meet the application requirements</p>
+    </a>
+
+                    </li>
+                    <li> <a href="product/flexible-circuit/">
+      <img src="assets/product-list/list-items/item1.png"/>
+      <h5>Flexible Circuit</h5>
+      <p>A technology with the potential to revolutionize electronics as we know it</p>
     </a>
 
                     </li>
@@ -128,13 +137,6 @@
       <img src="assets/product-list/list-items/item5.png"/>
       <h5>Security Foil</h5>
       <p>3D multi-directional protextion against physical intrusion.</p>
-    </a>
-
-                    </li>
-                    <li> <a href="product/force-sensors/">
-      <img src="assets/product-list/list-items/item6.png"/>
-      <h5>Force Sensors</h5>
-      <p>Pressure sensitive ink formulation is customized to meet the application requirements</p>
     </a>
 
                     </li>
@@ -154,14 +156,14 @@
       <!-- DEVELOPMENT CENTER -->
       <article class="standard-article gray">
         <span class="dashed-header">&#8212; get started &#8212;</span>
-        <h1 class="animated fadeIn">Development Centre</h1>
+        <h1 class="animated fadeIn">Development Center</h1>
         <p class="center">The model is drawn from the lean startup. We combine project management and agile engineering.<br/>
           The development Center provides conceptual design, high speed prototyping and functional testing capabilities to reduce customer development cycle.
         </p>
         <ul class="design-list-component design-list @@className">
     <li>
         <!--<img src="assets/list-items/item8.png"/>-->
-        <div style="background-image: url(assets/design-list/assets/item8a.jpg)"
+        <div style="background-image: url(assets/market-list/assets/image-placeholder-500x500.jpg)"
         class="img"></div>
          <h5>Design</h5>
 
@@ -170,7 +172,7 @@
     </li>
     <li>
         <!--<img src="assets/list-items/item8.png"/>-->
-        <div style="background-image: url(assets/design-list/assets/item7.png)"
+        <div style="background-image: url(assets/market-list/assets/image-placeholder-500x500.jpg)"
         class="img"></div>
          <h5>Prototyping</h5>
 
@@ -179,7 +181,7 @@
     </li>
     <li>
         <!--<img src="assets/list-items/item8.png"/>-->
-        <div style="background-image: url(assets/design-list/assets/item9a.jpg)"
+        <div style="background-image: url(assets/market-list/assets/image-placeholder-500x500.jpg)"
         class="img"></div>
          <h5>Testing</h5>
 
@@ -202,25 +204,7 @@
         <h1>Markets</h1>
         <ul class="markets-list-component @@className">
     <li class="clearfix">
-        <div class="image" style="background-image: url('assets/market-list/assets/consumer-electronics.jpg ');"></div>
-        <div class="content">
-             <h5>Consumer Electronic</h5>
-
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-                nibh.</p>
-        </div>
-    </li>
-    <li class="clearfix">
-        <div class="image" style="background-image: url('assets/market-list/assets/survey.jpg ');"></div>
-        <div class="content">
-             <h5>Instrumentation</h5>
-
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-                nibh.</p>
-        </div>
-    </li>
-    <li class="clearfix">
-        <div class="image" style="background-image: url('assets/market-list/assets/medical2.jpg ');"></div>
+        <div class="image" style="background-image: url('assets/market-list/assets/medical.jpg ');"></div>
         <div class="content">
              <h5>Medical</h5>
 
@@ -229,7 +213,7 @@
         </div>
     </li>
     <li class="clearfix">
-        <div class="image" style="background-image: url('assets/market-list/assets/banking.jpg ');"></div>
+        <div class="image" style="background-image: url('assets/market-list/assets/payment.jpg ');"></div>
         <div class="content">
              <h5>Banking/Payment</h5>
 
@@ -241,6 +225,24 @@
         <div class="image" style="background-image: url('assets/market-list/assets/image-placeholder-500x500.jpg ');"></div>
         <div class="content">
              <h5>Defense</h5>
+
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                nibh.</p>
+        </div>
+    </li>
+    <li class="clearfix">
+        <div class="image" style="background-image: url('assets/market-list/assets/instrumentation.jpg ');"></div>
+        <div class="content">
+             <h5>Instrumentation</h5>
+
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                nibh.</p>
+        </div>
+    </li>
+    <li class="clearfix">
+        <div class="image" style="background-image: url('assets/market-list/assets/image-placeholder-500x500.jpg ');"></div>
+        <div class="content">
+             <h5>Consumer Electronic</h5>
 
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
                 nibh.</p>

@@ -7,6 +7,12 @@
     background-position: center right;
   }
 
+  .logo-cmi {
+    display: block;
+    margin: 60px auto 0;
+    width: 150px;
+  }
+
   article {
     padding: 150px 40px;
   }
@@ -15,10 +21,13 @@
     padding: 60px 40px;
   }
 
+  .locations {
+    padding-bottom: 60px;
+  }
+
   .map-box-component {
     height: 600px;
     width: 100%;
-    margin-top: 40px;
 
     .marker {
       width: 40px;
