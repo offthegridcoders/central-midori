@@ -6,7 +6,6 @@ var browserSync = require('browser-sync').create();
 var clean = require('gulp-clean');
 var concat = require('gulp-concat');
 const imagemin = require('gulp-imagemin');
-
 const htmlPartial = require('gulp-html-partial');
 
 var dist = {
