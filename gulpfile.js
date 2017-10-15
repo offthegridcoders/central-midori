@@ -5,6 +5,7 @@ var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 var clean = require('gulp-clean');
 var concat = require('gulp-concat');
+const imagemin = require('gulp-imagemin');
 
 const htmlPartial = require('gulp-html-partial');
 
@@ -38,17 +39,61 @@ gulp.task('copy-images', function () {
     './templates/**/*.jpg',
     './templates/**/*.png'
   ])
-    .pipe(gulp.dest('./docs/assets/'));
+  .pipe(imagemin([
+    imagemin.gifsicle({interlaced: true}),
+    imagemin.jpegtran({progressive: true}),
+    imagemin.optipng({optimizationLevel: 5}),
+    imagemin.svgo({
+      plugins: [
+        {removeViewBox: true},
+        {cleanupIDs: false}
+      ]
+    })
+  ], { verbose: true}))
+  .pipe(gulp.dest('./docs/assets/'));
 });
 
 gulp.task('copy-public-assets', function () {
   gulp.src(['./public/assets/favicon/*.*'])
+    .pipe(imagemin([
+      imagemin.gifsicle({interlaced: true}),
+      imagemin.jpegtran({progressive: true}),
+      imagemin.optipng({optimizationLevel: 5}),
+      imagemin.svgo({
+        plugins: [
+          {removeViewBox: true},
+          {cleanupIDs: false}
+        ]
+      })
+    ], { verbose: true}))
     .pipe(gulp.dest('./docs/favicon/'));
 
   gulp.src(['./public/assets/logos/*.*'])
+    .pipe(imagemin([
+      imagemin.gifsicle({interlaced: true}),
+      imagemin.jpegtran({progressive: true}),
+      imagemin.optipng({optimizationLevel: 5}),
+      imagemin.svgo({
+        plugins: [
+          {removeViewBox: true},
+          {cleanupIDs: false}
+        ]
+      })
+    ], { verbose: true}))
     .pipe(gulp.dest('./docs/logos/'));
 
   gulp.src(['./public/assets/images/*.*'])
+    .pipe(imagemin([
+      imagemin.gifsicle({interlaced: true}),
+      imagemin.jpegtran({progressive: true}),
+      imagemin.optipng({optimizationLevel: 5}),
+      imagemin.svgo({
+        plugins: [
+          {removeViewBox: true},
+          {cleanupIDs: false}
+        ]
+      })
+    ], { verbose: true}))
     .pipe(gulp.dest('./docs/images/'));
 });
 
