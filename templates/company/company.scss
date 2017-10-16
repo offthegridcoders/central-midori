@@ -84,3 +84,15 @@
     margin-top: 40px;
   }
 }
+
+@media screen and (max-width: 780px) {
+  .company-section {
+    .company-image {
+      display: none;
+    }
+
+    .logo-list {
+      padding-left: 0;
+    }
+  }
+}

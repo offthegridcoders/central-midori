@@ -2,15 +2,15 @@
   <a href="/">
     <img class="logo" src="assets/navbar/assets/logo.png"/>
   </a>
-  <ul class="main-list">
-    <li><a href="product" id="productLink">Product</a></li>
-    <li><a href="services" id="servicesLink">Services</a></li>
-    <li><a href="manufacturing" id="manufacturingLink">Manufacturing</a></li>
-    <li><a href="company" id="companyLink">Company</a></li>
-  </ul>
+  <partial src="_navlist.html"></partial>
   <div class="phone">
     <i class="fa fa-phone" aria-hidden="true"></i>
     <a href="tel:65-6779-1113">(+65) 6779 1113</a>
+  </div>
+  <img class="bars" onClick="toggleMobileNav()" src="images/bars.png"/>
+  <div class="slide-menu hidden" id="slideMenu">
+    <partial src="_navlist.html"></partial>
+    <div class="underlay" onClick="toggleMobileNav()"></div>
   </div>
 </nav>
 
@@ -20,4 +20,19 @@
 
     $('#' + param +'Link').addClass("active");
   });
+
+
+
+
+  var toggleMobileNav = function() {
+    console.log('BANG');
+    var menu = $('#slideMenu');
+    if (menu.hasClass('hidden')) {
+      menu.addClass('visible');
+      menu.removeClass('hidden');
+    } else {
+      menu.addClass('hidden');
+      menu.removeClass('visible');
+    }
+  }
 </script>

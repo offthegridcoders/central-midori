@@ -129,3 +129,13 @@
     //}
   }
 }
+
+@media screen and (max-width: 780px) {
+  .contact-section {
+    .north-america {
+      li {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}

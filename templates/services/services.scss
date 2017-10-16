@@ -31,3 +31,15 @@
     margin-top: 0;
   }
 }
+
+@media screen and (max-width: 780px) {
+  .services-section {
+    h2 {
+      margin: 0;
+    }
+    .medium {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -30,3 +30,18 @@
     margin-top: 40px;
   }
 }
+
+@media screen and (max-width: 780px) {
+  .data-sheets-section {
+    text-align: center;
+
+    a {
+      float: none;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 20px 0 0;
+    }
+  }
+}

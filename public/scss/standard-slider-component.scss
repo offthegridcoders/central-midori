@@ -5,15 +5,19 @@
 
   &.small {
     width: 250px;
+    max-width: 100%;
   }
   &.medium {
     width: 400px;
+    max-width: 100%;
   }
   &.large {
     width: 800px;
+    max-width: 100%;
   }
   &.full {
     width: 100%;
+    max-width: 100%;
   }
   &.pull-left {
     float: left;

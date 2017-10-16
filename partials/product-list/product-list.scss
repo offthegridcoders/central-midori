@@ -65,3 +65,19 @@
     background-color: #fff;
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .product-list-component {
+    .image-only {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .product-list-component {
+    li {
+      margin: 20px 0;
+    }
+  }
+}

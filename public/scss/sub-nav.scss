@@ -32,3 +32,23 @@
     }
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .sub-nav {
+    top: 55px;
+
+    a {
+      font-size: 12px;
+    }
+
+    li {
+      margin-right: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .sub-nav {
+    display: none;
+  }
+}

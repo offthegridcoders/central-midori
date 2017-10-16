@@ -42,3 +42,21 @@
     background-color: #fff;
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .markets-list-component {
+    li {
+      width: 45%;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .markets-list-component {
+    li {
+      display: block;
+      width: 100%;
+    }
+  }
+}

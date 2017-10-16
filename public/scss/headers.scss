@@ -14,3 +14,9 @@ h2 {
   margin: 30px 20px;
   font-size: 30px;
 }
+
+@media screen and (max-width: 780px) {
+  h1 {
+    font-size: 38px;
+  }
+}

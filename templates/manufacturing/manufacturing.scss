@@ -58,3 +58,24 @@
     }
   }
 }
+
+@media screen and (max-width: 780px) {
+  .manufacturing-section {
+    img.small,
+    img.medium,
+    .standard-slider-component.medium,
+    .standard-slider-component.small {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .special-width ul {
+      width: 100%;
+      padding-left: 0;
+    }
+
+    .specifications-article ul {
+      width: 100%;
+    }
+  }
+}
