@@ -15,23 +15,99 @@
   <meta name="twitter:card" content="summary_large_image">
 
   <partial src="_head.html"></partial>
+  <script src="js/parallax.min.js"></script>
+
 </head>
   <body>
     <!-- NAVBAR -->
     <partial src="navbar/_navbar.html"></partial>
 
     <section class="careers-section">
-      <!-- MANUFACTURING -->
+      <!-- HEADER -->
+      <div class="parallax-window"></div>
+
+      <!-- CAREERS -->
       <article class="standard-article">
-        <span class="dashed-header">&#8212; work with us &#8212;</span>
-        <h1 class="brand-header">Careers</h1>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat</p>
+        <span class="dashed-header">&#8212; careers &#8212;</span>
+        <h1 class="brand-header">Come and join our company</h1>
+        <p>Central Midori International has developed a unique culture of entrepreneurship, excellence and teamwork. We pride ourselves for being a company of doers where everyone is measured by his contribution to achieving our goals.</p>
+        <p>If you like challenges, advanced Printed Electronics technology and high velocity business environment you will love working at CMI!</p>
+      </article>
+
+      <article class="standard-article gray career-article">
+        <h2>Open Positions</h2>
+        <ul class="careers-list">
+          <li class="career">
+            <h3>Engineering/Quality Assistant</h3>
+            <h4>Responsibilities</h4>
+            <ul>
+              <li>Responsible for overall coordination of controlled document within the company including
+                but not limited to Quality, Safety and Engineering.</li>
+              <li>Perform the Quality document control function under the supervision of Quality Manager</li>
+              <li>Edit, maintain and distribute the product manufacturing instructions in collaboration with
+                the product engineers.</li>
+              <li>Ensure that all users have the latest revisions of appropriate documentation in a timely
+                manner and remove obsolete documentation.</li>
+              <li>Responsible for processing documentation change request and notification (ECN).</li>
+            </ul>
+            <h4>Requirements</h4>
+            <ul>
+              <li>Min O level</li>
+              <li>Meticulous and organized</li>
+              <li>Able to work independently</li>
+              <li>Proficient in MS office</li>
+              <li>1 or 2 year experience preferable</li>
+              <li>Singaporean may apply and able to liaise with mandarin speaking clients.</li>
+            </ul>
+            <div class="button-wrapper-center">
+              <a href="/contact">
+                <button class="branded-btn">
+                  Contact us to Apply
+                </button>
+              </a>
+            </div>
+          </li>
+          <li class="career">
+            <h3>Application Engineer</h3>
+            <h4>Responsibilities</h4>
+            <ul>
+              <li>Understand customers’ needs and develop innovative solutions.</li>
+              <li>Design, fabricate and evaluate products using internal resources or external vendors.</li>
+              <li>Build prototypes and systems for testing.</li>
+              <li>Conduct tests, document test results, and develop client presentation.</li>
+              <li>Perform inspection and failure analysis.</li>
+              <li>Establish robust processes to be transferred to manufacturing.</li>
+              <li>Identify and keep abreast of novel technical concepts and markets.</li>
+              <li>Coordinate and communicate work effort within organization.</li>
+            </ul>
+            <h4>Requirements</h4>
+            <ul>
+              <li>Engineering degree or equivalent.</li>
+              <li>3 to 5 years of experience.</li>
+              <li>Hands-on and pragmatic.</li>
+              <li>Energetic, curious, resourceful, highly creative and self-motivated.</li>
+              <li>Able to thrive in a fast-moving and sometimes ambiguous environment.</li>
+              <li>Strong sense of ownership and accountability.</li>
+              <li>Ability to work independently</li>
+            </ul>
+            <div class="button-wrapper-center">
+              <a href="/contact">
+                <button class="branded-btn">
+                  Contact us to Apply
+                </button>
+              </a>
+            </div>
+          </li>
+        </ul>
       </article>
 
     </section>
 
     <!-- FOOTER -->
     <partial src="footer/_footer.html" data="Footer"></partial>
+    <script>
+      $('.parallax-window').parallax({imageSrc: 'assets/manufacturing/assets/image-placeholder-500x500.jpg', position: 'center'});
+    </script>
 
   </body>
 </html>
