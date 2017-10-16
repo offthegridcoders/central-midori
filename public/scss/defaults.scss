@@ -28,3 +28,9 @@ body {
     filter: brightness(0) invert(1);
   }
 }
+
+@media screen and (max-width: 780px) {
+  .parallax-window {
+    min-height: 200px !important;
+  }
+}
