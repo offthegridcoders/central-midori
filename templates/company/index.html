@@ -60,6 +60,7 @@
             <img class="company-image" src='assets/company/assets/demmel-ag.jpg'/>
             <img class="logo" src="logos/logo-demmel-ag.png"/>
             <h3>DEMMEL AG<span>DEMMEL GRUPPE</span></h3>
+            <address>D-88175 Scheidegg, Germany</address>
             <p>Located in the beautiful region of Allgäu in southern Germany, Demmel AG is a leading company of industrial identification, decoration and communication.</p>
           </li>
 
@@ -67,6 +68,7 @@
             <img class="company-image" src='assets/company/assets/demmel-gmbh.jpg'/>
             <img class="logo" src="logos/logo-demmel.png"/>
             <h3>DEMMEL<span>GmbH & Co. KG</span></h3>
+            <address>Heuriedweg 20, D-88131 Lindau, Germany</address>
             <p>Located in Lindau on the eastern side of Lake Constance (Bodensee in German) DEMMEL KG is specialised in trading for DEMMEL GRUUPPE.</p>
           </li>
 
@@ -74,6 +76,7 @@
             <img class="company-image" src='assets/company/assets/rawe.jpg'/>
             <img class="logo" src="logos/logo-rawe.png"/>
             <h3>RAWE Electronic<span>DEMMEL GRUPPE</span></h3>
+            <address>Bregenzer StraBe 67-69 88171 Weiler IM Allgan</address>
             <p>RAWE Electronic GmbH produces electronic assemblies and systems for a broad range of industries such as medical, industrial electronics, automotive and commercial vehicle industy.</p>
           </li>
 
@@ -81,6 +84,7 @@
             <img class="company-image" src='assets/market-list/assets/image-placeholder-500x500.jpg'/>
             <img class="logo" src="logos/wafa.png"/>
             <h3>WAFA<span>DEMMEL GRUPPE</span></h3>
+            <address>SchafweidstraBe 86179 Augsburg, Germany</address>
             <p>WAFA Germany GmbH, headquartered in Augsburg, specializes in the fields of plastic technology and injection molding as well as in the field of surface refinement of plastics. It is heavily positioned in the automotive sector as a supplier without its own end products.</p>
           </li>
 
@@ -88,6 +92,7 @@
             <img class="company-image" src='assets/market-list/assets/image-placeholder-500x500.jpg'/>
             <img class="logo" src="logos/lbt.png"/>
             <h3>LBT<span>DEMMEL GRUPPE</span></h3>
+            <address></address>
             <p>LBT, headquartered in Munich, specializes in the laser marking of surfaces. This labeling form the fastest and easiest way to offer markings. Whether it is turning or milling parts, front panels, housings, medical devices or other moldings, the non-contact labeling process can be used to label almost every conceivable component in places where other printing processes fail. Describe your tasks, we will find a solution.</p>
           </li>
 
@@ -95,6 +100,7 @@
             <img class="company-image" src='assets/market-list/assets/image-placeholder-500x500.jpg'/>
             <img class="logo" src="logos/logo-tefag.png"/>
             <h3>TEFAG<span>DEMMEL GRUPPE</span></h3>
+            <address>Grossteldstrasse 5 8887 Mels, Switzerland</address>
             <p>TEFAG provides electronics design and engineering services. We work closely with the customers during the design phase, create specifications and drawings and if necessary we manage the full assembly and deliver the finished product.</p>
           </li>
 
@@ -102,6 +108,7 @@
             <img class="company-image" src='assets/market-list/assets/image-placeholder-500x500.jpg'/>
             <img class="logo" src="logos/dmcc.png"/>
             <h3>DMCC<span>DEMMEL GRUPPE</span></h3>
+            <address>No. 7 Hengtong Dadao, Nanjing Economic-Technology Deve Zone, China 210038</address>
             <p>Demmel Metal Components, headquartered in Nanjing (short form) DMCC, specializes in the manufacture and supply of high-quality metal parts and their assembly, offering high-class and modern solutions in the branches of mechanical engineering, plant construction, electronics and the automotive industry. In addition to metal components, the product range also includes stainless steel keypads, eg for ATMs and membrane membrane keyboards for industrial plants, products used in man-machine input systems (HMI, HID).</p>
           </li>
 
@@ -109,6 +116,7 @@
             <img class="company-image" src='assets/market-list/assets/image-placeholder-500x500.jpg'/>
             <img class="logo" src="logos/logo-demmel.png"/>
             <h3>DEMMEL INC<span>DEMMEL GRUPPE</span></h3>
+            <address>1186 Asheville Highway, Spartanburg SC, 29303</address>
             <p>Demmel Inc. USA was established within the framework of the localization concept and the development of the NAFTA markets in 2016 and has already begun with its first assembly activities. In 2017, it will take over the complete production of components for the Automotive Division and serve the local American market.</p>
           </li>
         </ul>
@@ -141,8 +149,8 @@
       var map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/light-v9',
-        center: [43.6793, 33.2232],
-        zoom: 2
+        center: [-10.898437, 27.215556],
+        zoom: 1.5
       });
       var geojson = {
         type: 'FeatureCollection',
@@ -166,9 +174,76 @@
             },
             properties: {
               title: 'Demmel Gruppe',
-              description: 'germany'
+              description: 'map-marker'
             }
-          }]
+          },
+          {
+            type: 'Feature',
+            geometry: {
+              type: 'Point',
+              coordinates: [9.678933, 47.579782]
+            },
+            properties: {
+              title: 'Demmel GmbH',
+              description: 'map-marker'
+            }
+          },
+          {
+            type: 'Feature',
+            geometry: {
+              type: 'Point',
+              coordinates: [10.897790, 48.370545]
+            },
+            properties: {
+              title: 'Wafa Germany GmbH',
+              description: 'map-marker'
+            }
+          },
+          {
+            type: 'Feature',
+            geometry: {
+              type: 'Point',
+              coordinates: [10.340652, 47.693124]
+            },
+            properties: {
+              title: 'Rawe',
+              description: 'map-marker'
+            }
+          },
+          {
+            type: 'Feature',
+            geometry: {
+              type: 'Point',
+              coordinates: [9.422402, 47.047837]
+            },
+            properties: {
+              title: 'Tefag',
+              description: 'map-marker'
+            }
+          },
+          {
+            type: 'Feature',
+            geometry: {
+              type: 'Point',
+              coordinates: [-81.932048, 34.949567]
+            },
+            properties: {
+              title: 'Demmel Inc',
+              description: 'map-marker'
+            }
+          },
+          {
+            type: 'Feature',
+            geometry: {
+              type: 'Point',
+              coordinates: [118.796877, 32.060255]
+            },
+            properties: {
+              title: 'Demmel Metal Components',
+              description: 'map-marker'
+            }
+          }
+        ]
       };
       geojson.features.forEach(function(marker) {
         // create a HTML element for each feature
@@ -177,9 +252,11 @@
         // make a marker for each feature and add to the map
         new mapboxgl.Marker(el, { offset: [-50 / 2, -50 / 2] })
           .setLngLat(marker.geometry.coordinates)
+          .setPopup(new mapboxgl.Popup({ offset: 25 })
+          .setHTML('<h3>' + marker.properties.title + '</h3>'))
           .addTo(map);
       });
-      map.scrollZoom.disable();
+      //map.scrollZoom.disable();
 
       $('.parallax-window').parallax({imageSrc: 'assets/company/assets/header.jpg', position: 'top center'});
 

@@ -13,6 +13,10 @@
     width: 150px;
   }
 
+  address {
+    margin-top: 10px;
+  }
+
   article {
     padding: 150px 40px;
   }
@@ -35,6 +39,10 @@
       cursor: pointer;
       background-size: contain;
       background-repeat: no-repeat;
+    }
+
+    .map-marker {
+      background-image: url('../logos/map-marker.png');
     }
 
     .singapore {
