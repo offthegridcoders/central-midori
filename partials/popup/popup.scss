@@ -1,0 +1,40 @@
+@import '../../public/scss/palette';
+
+.popup-container {
+  position: fixed;
+  bottom: 0;
+  background-color: $primaryColor;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+
+  p {
+    padding: 0;
+    line-height: 18px;
+    margin: 0;
+  }
+
+  a {
+    color: #fff;
+  }
+
+  .close {
+    float: right;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .popup-container {
+    p {
+      padding: 0 80px;
+    }
+
+    a {
+      display: block;
+    }
+  }
+}

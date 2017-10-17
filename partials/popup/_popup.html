@@ -1,0 +1,12 @@
+<aside id="popup" class="popup-container animated slideInUp">
+  <span class="close">close</span>
+  <p>Come visit our booth #M13 at Printed Electronics USA, November 15th and 16th  2017, Santa Clara, CA
+  <a href="https://www.idtechex.com/printed-electronics-usa/show/en/" target="_blank">More Info</a></p>
+</aside>
+
+
+<script>
+  $('.close').on('click', function() {
+    $('#popup').fadeOut(200, function() { $(this).remove(); });
+  })
+</script>
