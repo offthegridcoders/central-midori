@@ -74,13 +74,16 @@
   .phone {
     float: right;
     position: relative;
-    top: 13px;
+    top: 3px;
+    background-color: $brandLightBlue;
+    padding: 10px 15px;
+    border-radius: 20px;
 
     a,
     .fa-phone {
       display: inline-block;
       vertical-align: middle;
-      color: $brandLightBlue;
+      color: #fff;
     }
 
     .fa-phone {
@@ -90,7 +93,7 @@
     a {
       font-weight: 600;
       cursor: pointer;
-      font-size: 18px;
+      font-size: 16px;
       text-decoration: none;
     }
   }
