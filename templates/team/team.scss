@@ -1,0 +1,73 @@
+@import '../../public/scss/palette';
+
+.team-section {
+  padding-top: 65px;
+
+  .management {
+    margin-top: 80px;
+  }
+
+  .senior-management {
+    .profile-image {
+      cursor: pointer;
+
+      &:hover {
+        -webkit-filter: grayscale(30%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(30%);
+
+        label {
+          bottom: 0;
+        }
+      }
+    }
+  }
+
+  .profile-image {
+    display: block;
+    width: 220px;
+    height: 220px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    transition: ease all .4s;
+    position: relative;
+    overflow: hidden;
+
+    label {
+      position: absolute;
+      bottom: -40px;
+      left: 1px;
+      width: 220px;
+      background-color: $brandGray;
+      padding: 5px;
+      text-align: center;
+      color: #fff;
+      transition: ease all .4s;
+      cursor: pointer;
+    }
+  }
+
+  ul {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      display: inline-block;
+      vertical-align: top;
+      width: 260px;
+    }
+
+    h3 {
+      font-size: 16px;
+
+      span {
+        font-weight: 400;
+        display: block;
+        margin-top: 5px;
+      }
+    }
+  }
+}
