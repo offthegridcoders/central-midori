@@ -59,14 +59,88 @@
       vertical-align: top;
       width: 260px;
     }
+  }
 
-    h3 {
-      font-size: 16px;
+  h3 {
+    font-size: 16px;
 
-      span {
-        font-weight: 400;
+    span {
+      font-weight: 400;
+      display: block;
+      margin-top: 5px;
+    }
+  }
+
+  .employee-bio-container {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 50px 0;
+    box-sizing: border-box;
+
+    .content {
+      vertical-align: top;
+      display: inline-block;
+      width: calc(100% - 300px);
+      text-align: left;
+
+      h1 {
+        text-align: left;
+        margin: 0 0 20px;
+        text-transform: capitalize;
+      }
+    }
+
+    .sidebar {
+      vertical-align: top;
+      display: inline-block;
+      width: 295px;
+      text-align: center;
+
+      img {
+        width: 200px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .team-section {
+    .employee-bio-container {
+      padding-top: 0;
+
+      .content,
+      .sidebar {
         display: block;
-        margin-top: 5px;
+        width: 100%;
+        text-align: left;
+      }
+
+      .sidebar {
+        margin-bottom: 50px;
+
+        h3 span {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .team-section {
+    .employee-bio-container {
+      padding-top: 0;
+      text-align: center;
+
+      .content,
+      .sidebar {
+        text-align: center;
+
+        h1 {
+          text-align: center;
+        }
       }
     }
   }
